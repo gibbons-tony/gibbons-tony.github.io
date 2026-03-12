@@ -39,12 +39,15 @@ layout: default
     {% endif %}
   </article>
 
+  {% comment %}
+  Bibliography disabled for GitHub Pages compatibility
   {% if page.related_publications %}
     <h2>References</h2>
     <div class="publications">
-      {% bibliography --cited_in_order %}
+      bibliography tag removed for GitHub Pages
     </div>
   {% endif %}
+  {% endcomment %}
 
   {% if site.giscus and page.giscus_comments %}
     {% include giscus.liquid %}
