@@ -59,12 +59,15 @@ layout: default
   </header>
 
   <article class="post-content">
+    {% comment %}
+    TOC disabled for GitHub Pages compatibility
     {% if page.toc and page.toc.beginning %}
       <div id="table-of-contents">
-        {% toc %}
+        toc tag removed for GitHub Pages
       </div>
       <hr>
     {% endif %}
+    {% endcomment %}
     <div id="markdown-content">
       {{ content }}
     </div>
