@@ -1,0 +1,5 @@
+{
+  "name": "cloud-platforms",
+  "category": "technology",
+  "prompt": "Clean cloud platform comparison. White background. Three columns with headers \"Google Cloud\" | \"AWS\" | \"Azure\" in charcoal (#1c1c1d). Below each, 5 small grey text items like \"BigQuery\", \"S3\", \"Cosmos DB\" etc. Simple 1px grey borders between columns. Single ember accent (#D95B43) dot next to \"BigQuery\". Minimal Inter font. No logos, just text. Generous spacing. Flat design aesthetic."
+}

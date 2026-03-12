@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Placeholders - Full View</title>
+    <style>
+        :root {
+            --ember: #D95B43;
+            --charcoal: #1c1c1d;
+            --grey-light: #f5f5f5;
+            --grey-medium: #999;
+            --grey-dark: #666;
+            --white: #FFFFFF;
+            --green: #10B981;
+            --blue: #2563EB;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+            background: #f8f8f8;
+            padding: 40px 20px;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-title {
+            font-size: 48px;
+            font-weight: 300;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+
+        .gallery-subtitle {
+            font-size: 18px;
+            color: var(--grey-dark);
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--charcoal);
+            margin-bottom: 40px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--ember);
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .placeholder-card {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .placeholder-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        /* Individual placeholder styles */
+        .placeholder {
+            width: 100%;
+            aspect-ratio: 3/2;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        /* AI Analytics */
+        .ai-analytics {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .ai-analytics .box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            min-width: 150px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .ai-analytics .arrow {
+            color: #999;
+            font-size: 24px;
+        }
+
+        .ai-analytics .highlight {
+            color: var(--ember);
+            font-weight: 600;
+        }
+
+        .ai-analytics .annotation {
+            position: absolute;
+            bottom: 60px;
+            right: 200px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Dashboard */
+        .dashboard {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .metric-cards {
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .metric-card {
+            flex: 1;
+            max-width: 200px;
+            padding: 24px;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .metric-card.primary .metric-value { color: var(--ember); }
+        .metric-card.success .metric-value { color: var(--green); }
+        .metric-card.info .metric-value { color: var(--blue); }
+
+        .chart-area {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #e5e5e5;
+            position: relative;
+            background:
+                linear-gradient(180deg, transparent 94%, #f0f0f0 94%, #f0f0f0 94.5%, transparent 94.5%),
+                linear-gradient(90deg, transparent 94%, #f0f0f0 94%, #f0f0f0 94.5%, transparent 94.5%);
+            background-size: 50px 50px;
+        }
+
+        .chart-line {
+            position: absolute;
+            bottom: 20%;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: var(--ember);
+            transform: rotate(-8deg);
+        }
+
+        /* ML Platform */
+        .ml-platform {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .platform-layer {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .layer-label {
+            min-width: 150px;
+            font-weight: 500;
+        }
+
+        .layer-boxes {
+            display: flex;
+            gap: 15px;
+            flex: 1;
+        }
+
+        .layer-box {
+            border: 1px solid #ddd;
+            padding: 12px 20px;
+            font-size: 14px;
+        }
+
+        .layer-box.highlight {
+            border-color: var(--ember);
+            color: var(--ember);
+        }
+
+        /* Language Grid */
+        .lang-grid {
+            width: 100%;
+        }
+
+        .lang-grid table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .lang-grid td {
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 16px;
+        }
+
+        .lang-grid td.highlight {
+            border: 2px solid var(--ember);
+        }
+
+        /* Cloud Platforms */
+        .cloud-compare {
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .cloud-column {
+            flex: 1;
+            max-width: 250px;
+            padding: 0 20px;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .cloud-column:last-child {
+            border-right: none;
+        }
+
+        .cloud-header {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .cloud-services {
+            list-style: none;
+        }
+
+        .cloud-services li {
+            font-size: 14px;
+            color: var(--grey-dark);
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .cloud-services li.highlight::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--ember);
+        }
+
+        /* Pipeline */
+        .pipeline {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .pipe-step {
+            text-align: center;
+        }
+
+        .pipe-circle {
+            width: 70px;
+            height: 70px;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 8px;
+        }
+
+        .pipe-circle.highlight {
+            border-color: var(--ember);
+            color: var(--ember);
+        }
+
+        .pipe-label {
+            font-size: 12px;
+            color: var(--grey-medium);
+        }
+
+        /* Impact */
+        .impact {
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .impact-hero {
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--ember);
+        }
+
+        .impact-subtitle {
+            font-size: 18px;
+            color: var(--charcoal);
+        }
+
+        .impact-stats {
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--grey-medium);
+        }
+
+        /* Berkeley */
+        .berkeley {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .school {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .degree {
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--ember);
+        }
+
+        .field {
+            font-size: 18px;
+            color: var(--grey-dark);
+        }
+
+        .details {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        /* Patent */
+        .patent {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .patent-content {
+            width: 100%;
+        }
+
+        .patent-label {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--grey-medium);
+            margin-bottom: 20px;
+        }
+
+        .patent-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .patent-features {
+            list-style: none;
+        }
+
+        .patent-features li {
+            font-size: 16px;
+            color: var(--grey-dark);
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .patent-features li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--ember);
+        }
+
+        /* Venn */
+        .venn {
+            position: relative;
+        }
+
+        .venn-container {
+            position: relative;
+            width: 400px;
+            height: 350px;
+        }
+
+        .venn-circle {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.8);
+        }
+
+        .venn-circle:nth-child(1) { top: 0; left: 40px; }
+        .venn-circle:nth-child(2) { top: 0; right: 40px; }
+        .venn-circle:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        .venn-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--ember);
+        }
+
+        /* Cycle */
+        .cycle {
+            position: relative;
+        }
+
+        .cycle-container {
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+
+        .cycle-step {
+            position: absolute;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .cycle-step.highlight { color: var(--ember); }
+        .cycle-step:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+        .cycle-step:nth-child(2) { right: 0; top: 50%; transform: translateY(-50%); }
+        .cycle-step:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
+        .cycle-step:nth-child(4) { left: 0; top: 50%; transform: translateY(-50%); }
+
+        .cycle-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            color: var(--grey-medium);
+        }
+
+        /* Principles */
+        .principles {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .principles-title {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--grey-medium);
+            margin-bottom: 30px;
+        }
+
+        .principle-item {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .principle-number {
+            color: var(--ember);
+            font-weight: 600;
+        }
+
+        /* Hero */
+        .hero {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: var(--grey-dark);
+            letter-spacing: 4px;
+        }
+
+        .hero-line {
+            width: 200px;
+            height: 2px;
+            background: var(--ember);
+            margin-top: 20px;
+        }
+
+        /* Contact */
+        .contact {
+            flex-direction: column;
+            text-align: center;
+            gap: 16px;
+        }
+
+        .contact-heading {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .contact-email {
+            font-size: 18px;
+            color: var(--grey-dark);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 4px;
+            border-bottom: 2px solid var(--ember);
+        }
+
+        .contact-links {
+            font-size: 14px;
+            color: var(--grey-medium);
+        }
+
+        /* Process */
+        .process {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .process-steps {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .process-step {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .process-step.highlight {
+            color: var(--ember);
+        }
+
+        .process-arrow {
+            color: #ddd;
+            font-size: 20px;
+        }
+
+        .process-footer {
+            text-align: center;
+            font-size: 14px;
+            color: var(--grey-medium);
+            letter-spacing: 2px;
+        }
+
+        .card-caption {
+            padding: 20px;
+            border-top: 1px solid #f0f0f0;
+            background: #fafafa;
+        }
+
+        .caption-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .caption-desc {
+            font-size: 14px;
+            color: var(--grey-medium);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-header">
+        <h1 class="gallery-title">Portfolio Image Gallery</h1>
+        <p class="gallery-subtitle">CSS Placeholder Visualizations - Full Size Preview</p>
+    </div>
+
+    <!-- Case Studies -->
+    <div class="section">
+        <h2 class="section-title">Case Studies</h2>
+
+        <div class="placeholder-card">
+            <div class="placeholder ai-analytics">
+                <div class="box">Documents</div>
+                <span class="arrow">→</span>
+                <div class="box">Chunking<br><span class="highlight">256</span> tokens</div>
+                <span class="arrow">→</span>
+                <div class="box">Embeddings</div>
+                <span class="arrow">→</span>
+                <div class="box">Vector DB</div>
+                <span class="arrow">→</span>
+                <div class="box">LLM Output</div>
+                <div class="annotation">k=8 retrieval</div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">AI Analytics Architecture</div>
+                <div class="caption-desc">RAG pipeline with vector embeddings for document processing</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder dashboard">
+                <div class="metric-cards">
+                    <div class="metric-card primary">
+                        <div class="metric-value">$127M</div>
+                        <div>saved</div>
+                    </div>
+                    <div class="metric-card success">
+                        <div class="metric-value">99.7%</div>
+                        <div>uptime</div>
+                    </div>
+                    <div class="metric-card info">
+                        <div class="metric-value">1.2ms</div>
+                        <div>latency</div>
+                    </div>
+                </div>
+                <div class="chart-area">
+                    <div class="chart-line"></div>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Operations Dashboard</div>
+                <div class="caption-desc">Real-time metrics and performance monitoring</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder ml-platform">
+                <div class="platform-layer">
+                    <span class="layer-label">Data Ingestion</span>
+                    <span class="arrow">→</span>
+                    <div class="layer-boxes">
+                        <div class="layer-box">Streaming</div>
+                        <div class="layer-box">Batch</div>
+                        <div class="layer-box">APIs</div>
+                    </div>
+                </div>
+                <div class="platform-layer">
+                    <span class="layer-label">Model Training</span>
+                    <span class="arrow">→</span>
+                    <div class="layer-boxes">
+                        <div class="layer-box highlight">AutoML</div>
+                        <div class="layer-box">Custom</div>
+                        <div class="layer-box">Transfer</div>
+                    </div>
+                </div>
+                <div class="platform-layer">
+                    <span class="layer-label">Deployment</span>
+                    <span class="arrow">→</span>
+                    <div class="layer-boxes">
+                        <div class="layer-box">Edge</div>
+                        <div class="layer-box">Cloud</div>
+                        <div class="layer-box">Hybrid</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">ML Platform Architecture</div>
+                <div class="caption-desc">End-to-end MLOps pipeline infrastructure</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technology -->
+    <div class="section">
+        <h2 class="section-title">Technology Stack</h2>
+
+        <div class="placeholder-card">
+            <div class="placeholder lang-grid">
+                <table>
+                    <tr>
+                        <td>Python</td>
+                        <td>TypeScript</td>
+                        <td>Go</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">React</td>
+                        <td>Node.js</td>
+                        <td>SQL</td>
+                    </tr>
+                    <tr>
+                        <td>GraphQL</td>
+                        <td>Docker</td>
+                        <td>K8s</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Languages & Frameworks</div>
+                <div class="caption-desc">Core technology competencies</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder cloud-compare">
+                <div class="cloud-column">
+                    <div class="cloud-header">Google Cloud</div>
+                    <ul class="cloud-services">
+                        <li class="highlight">BigQuery</li>
+                        <li>Cloud Run</li>
+                        <li>Vertex AI</li>
+                        <li>Firestore</li>
+                        <li>Cloud Functions</li>
+                    </ul>
+                </div>
+                <div class="cloud-column">
+                    <div class="cloud-header">AWS</div>
+                    <ul class="cloud-services">
+                        <li>S3</li>
+                        <li>Lambda</li>
+                        <li>SageMaker</li>
+                        <li>DynamoDB</li>
+                        <li>ECS</li>
+                    </ul>
+                </div>
+                <div class="cloud-column">
+                    <div class="cloud-header">Azure</div>
+                    <ul class="cloud-services">
+                        <li>Cosmos DB</li>
+                        <li>Functions</li>
+                        <li>ML Studio</li>
+                        <li>Blob Storage</li>
+                        <li>AKS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Multi-Cloud Expertise</div>
+                <div class="caption-desc">Cross-platform cloud architecture experience</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder pipeline">
+                <div class="pipe-step">
+                    <div class="pipe-circle">Code</div>
+                    <div class="pipe-label">GitHub</div>
+                </div>
+                <span class="arrow">→</span>
+                <div class="pipe-step">
+                    <div class="pipe-circle">Build</div>
+                    <div class="pipe-label">Docker</div>
+                </div>
+                <span class="arrow">→</span>
+                <div class="pipe-step">
+                    <div class="pipe-circle">Test</div>
+                    <div class="pipe-label">Jest</div>
+                </div>
+                <span class="arrow">→</span>
+                <div class="pipe-step">
+                    <div class="pipe-circle highlight">Deploy</div>
+                    <div class="pipe-label">K8s</div>
+                </div>
+                <span class="arrow">→</span>
+                <div class="pipe-step">
+                    <div class="pipe-circle">Monitor</div>
+                    <div class="pipe-label">Datadog</div>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">CI/CD Pipeline</div>
+                <div class="caption-desc">Automated deployment workflow</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section">
+        <h2 class="section-title">Achievements & Impact</h2>
+
+        <div class="placeholder-card">
+            <div class="placeholder impact">
+                <div>
+                    <div class="impact-hero">$100M+</div>
+                    <div class="impact-subtitle">Cost Savings Delivered</div>
+                </div>
+                <div class="impact-stats">
+                    <div>
+                        <div class="stat-value">8,000+</div>
+                        <div class="stat-label">Users</div>
+                    </div>
+                    <div>
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Business Impact</div>
+                <div class="caption-desc">Measurable value delivered across organizations</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder berkeley">
+                <div class="school">UC BERKELEY</div>
+                <div class="degree">MIDS</div>
+                <div class="field">Master of Information and Data Science</div>
+                <div class="details">2021-2023 | GPA 3.9</div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Advanced Education</div>
+                <div class="caption-desc">Graduate degree in Data Science</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder patent">
+                <div class="patent-content">
+                    <div class="patent-label">US PATENT FILED</div>
+                    <div class="patent-title">ML-DRIVEN OPTIMIZATION SYSTEM</div>
+                    <ul class="patent-features">
+                        <li>Predictive capacity planning</li>
+                        <li>Real-time resource allocation</li>
+                        <li>Anomaly detection pipeline</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Innovation & IP</div>
+                <div class="caption-desc">Patent-pending technology</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Philosophy -->
+    <div class="section">
+        <h2 class="section-title">Approach & Methodology</h2>
+
+        <div class="placeholder-card">
+            <div class="placeholder venn">
+                <div class="venn-container">
+                    <div class="venn-circle">Data</div>
+                    <div class="venn-circle">Engineering</div>
+                    <div class="venn-circle">Business</div>
+                    <div class="venn-center">VALUE</div>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Value Framework</div>
+                <div class="caption-desc">Intersection of key disciplines</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder cycle">
+                <div class="cycle-container">
+                    <div class="cycle-step">Observe</div>
+                    <div class="cycle-step">Ideate</div>
+                    <div class="cycle-step highlight">Build</div>
+                    <div class="cycle-step">Measure</div>
+                    <div class="cycle-center">Iterate</div>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Innovation Process</div>
+                <div class="caption-desc">Continuous improvement cycle</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder principles">
+                <div>
+                    <div class="principles-title">CORE PRINCIPLES</div>
+                    <div class="principle-item">
+                        <span class="principle-number">1.</span> Data drives decisions
+                    </div>
+                    <div class="principle-item">
+                        <span class="principle-number">2.</span> Automation over repetition
+                    </div>
+                    <div class="principle-item">
+                        <span class="principle-number">3.</span> Simplicity scales
+                    </div>
+                    <div class="principle-item">
+                        <span class="principle-number">4.</span> Impact matters
+                    </div>
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Guiding Principles</div>
+                <div class="caption-desc">Core values and beliefs</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero & Contact -->
+    <div class="section">
+        <h2 class="section-title">Key Visuals</h2>
+
+        <div class="placeholder-card">
+            <div class="placeholder hero">
+                <div class="hero-title">Building Intelligence</div>
+                <div class="hero-subtitle">Data • Engineering • Impact</div>
+                <div class="hero-line"></div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Hero Banner</div>
+                <div class="caption-desc">Main landing visual</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder contact">
+                <div class="contact-heading">Let's Build Together</div>
+                <div class="contact-email">mark@example.com</div>
+                <div class="contact-links">
+                    GitHub | LinkedIn | Resume
+                </div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Contact Card</div>
+                <div class="caption-desc">Connection information</div>
+            </div>
+        </div>
+
+        <div class="placeholder-card">
+            <div class="placeholder process">
+                <div class="process-steps">
+                    <span class="process-step">Define</span>
+                    <span class="process-arrow">→</span>
+                    <span class="process-step">Research</span>
+                    <span class="process-arrow">→</span>
+                    <span class="process-step">Design</span>
+                    <span class="process-arrow">→</span>
+                    <span class="process-step highlight">Build</span>
+                    <span class="process-arrow">→</span>
+                    <span class="process-step">Deploy</span>
+                </div>
+                <div class="process-footer">ITERATIVE • AGILE • DATA-DRIVEN</div>
+            </div>
+            <div class="card-caption">
+                <div class="caption-title">Process Flow</div>
+                <div class="caption-desc">Development methodology</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

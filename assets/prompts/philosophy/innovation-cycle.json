@@ -1,0 +1,5 @@
+{
+  "name": "innovation-cycle",
+  "category": "philosophy",
+  "prompt": "Minimal innovation process. White background. Four squares arranged in clockwise pattern connected by thin curved grey arrows: \"Observe\" → \"Ideate\" → \"Build\" → \"Measure\" → (back to Observe). Each square is just text, no borders. One square (\"Build\") in ember orange (#D95B43), others in charcoal. Center of arrangement has small grey text \"Iterate\". Very clean, lots of padding. Flat design inspired by Material Design principles."
+}

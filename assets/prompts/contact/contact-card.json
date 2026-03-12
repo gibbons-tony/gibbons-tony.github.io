@@ -1,0 +1,5 @@
+{
+  "name": "contact-card",
+  "category": "contact",
+  "prompt": "Ultra-minimal contact card design. White background. Center-aligned text stack: \"Let's Build Together\" in charcoal (#1c1c1d), medium size. Below, smaller grey text: \"mark@example.com\". Below that, three tiny grey links separated by vertical bars: \"GitHub | LinkedIn | Resume\". One element (email) underlined with thin ember orange (#D95B43) line. No icons, no buttons, pure text. Lots of white space around. Inter font."
+}

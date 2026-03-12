@@ -1,0 +1,5 @@
+{
+  "name": "principles-list",
+  "category": "philosophy",
+  "prompt": "Clean principles typography. White background. Title \"Core Principles\" in small grey caps at top. Below, four lines of text, each starting with a number in ember orange (#D95B43): \"1. Data drives decisions\", \"2. Automation over repetition\", \"3. Simplicity scales\", \"4. Impact matters\". Numbers in ember, text in charcoal (#1c1c1d). Clean Inter font. Left-aligned. Generous line spacing. No bullets, icons, or decorations."
+}

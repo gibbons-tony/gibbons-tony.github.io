@@ -1,0 +1,174 @@
+/******************************************************************************
+ * Content
+ ******************************************************************************/
+
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 66px;
+  }
+}
+
+body.fixed-top-nav {
+  // Add some padding for the nav-bar.
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  // Remove padding below footer.
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+
+// TODO: redefine content layout.
+
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
+
+// TODO: redefine publications layout.
+
+/*****************************************************************************
+* Projects
+*****************************************************************************/
+
+// Enhanced Professional Project Cards
+.projects {
+  .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: var(--global-card-bg-color);
+
+    &.hoverable:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .card-img-top {
+      transform: scale(1.05);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: var(--global-text-color);
+      }
+
+      .card-text {
+        font-size: 0.95rem;
+        color: var(--global-text-color-light);
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .row {
+    row-gap: 2rem;
+  }
+}
+
+// Professional Image Display
+figure {
+  margin: 2rem 0;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .caption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+// Architecture Diagram Specific Styling
+.architecture-diagram {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(var(--global-theme-color-rgb), 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(var(--global-theme-color-rgb), 0.1);
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .diagram-caption {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+    font-size: 0.95rem;
+    color: var(--global-text-color);
+
+    strong {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Image Grid for Multiple Visuals
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+
+  .image-item {
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .image-label {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      text-align: center;
+    }
+  }
+}

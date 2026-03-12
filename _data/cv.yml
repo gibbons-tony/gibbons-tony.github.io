@@ -1,0 +1,172 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: M. Tony Gibbons
+    - name: Location
+      value: Bay Area, California
+    - name: Email
+      value: mark.a.gibbons@gmail.com
+    - name: LinkedIn
+      value: linkedin.com/in/markagibbons
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Master of Information and Data Science
+      institution: University of California, Berkeley
+      year: 2025
+      description:
+        - UC Berkeley Master's in Data Science program
+        - Focus on AI, Machine Learning, and Data Analytics
+    - title: Master of Business Administration
+      institution: Brigham Young University
+      year: 2008
+      description:
+        - Business strategy and financial management
+    - title: Bachelor of Science in Computer Engineering
+      institution: University of the Pacific
+      year: 2002
+      description:
+        - Magna Cum Laude
+        - Computer hardware and software engineering fundamentals
+    - title: Health Professions Certificate
+      institution: University of California, Berkeley
+      year: 2011-2014
+      description:
+        - Full pre-med curriculum including biology, chemistry, organic chemistry, physics, and biochemistry
+        - Completed while exploring PhD opportunities in medical research
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: Data Analytics and Engineering Manager
+      institution: Google, Cloud Finance Transformation
+      year: Mar 2020 - Present
+      description:
+        - Drove the complete product lifecycle for Google Cloud's first unified $XXB+ revenue platform by researching and designing business logic, using Python for EDA, and coding the foundational SQL data pipeline
+        - Established data governance processes to ensure confidentiality and scaled the platform from zero to over 8,000 daily active users
+        - Initiated and drove a second product lifecycle to build a full $XXB+ granular P&L profitability data solution
+        - Hired and led a new Business Systems Analyst (BSA) team of 4, providing executive leadership with project updates
+        - Spearheaded novel AI/ML finance tools, including dashboards enabling natural language (RAG) queries and ML models for root-cause-analysis
+
+    - title: Finance Manager
+      institution: Google, Data Center Supply Chain
+      year: Jan 2019 - Feb 2020
+      description:
+        - Led an AI/ML-driven strategic asset optimization initiative that improved operational efficiency and saved $100M in one quarter
+        - Used Machine Learning and regression techniques to predict stranded inventory and identify alternate usage scenarios
+        - Led a new Financial Planning & Analysis (FP&A) team, creating a $10B+ CapEx Long-Range Planning process
+        - Developed data infrastructure aligned with statistical forecasting methodologies for Infrastructure Finance
+
+    - title: Technical Program Manager
+      institution: Google, Cloud Technology Partnerships Strategy
+      year: Jun 2017 - Dec 2018
+      description:
+        - Drove strategic operations for the Cloud Technology Partnerships org, supporting its growth from 50 to 225+ employees
+        - Hired operations lead and managed a Business Intelligence team, architecting new real-time intelligence systems
+        - Built financial model for forecasting data center ROI used in C-level investment recommendations
+        - Managed hiring plans and conducted strategic portfolio analysis
+
+    - title: Senior Financial Analyst
+      institution: Google, Data Center Infrastructure R&D
+      year: Mar 2015 - May 2017
+      description:
+        - Established and managed the multi-$100M annual budget and financial controls for the R&D organization
+        - Integrated OpEx, CapEx, and HR data to support VP & Director on portfolio and operational planning
+        - Developed robust data application to automate HR resource allocation for OPEX and portfolio analysis
+        - Solution scaled across Google engineering and continues to inform core P&L opex apportionments
+
+    - title: Strategy & Operations Manager
+      institution: Cisco, Technical Services
+      year: Aug 2011 - Jul 2013
+      description:
+        - Led strategic operations initiatives for Technical Services organization
+
+    - title: FP&A Business Unit Controller
+      institution: Cisco, Voice Technology Group
+      year: Mar 2008 - Jul 2011
+      description:
+        - Managed financial planning and analysis for Voice Technology Business Unit
+        - Supported business unit controller functions
+
+    - title: ASIC Computer Hardware Design Engineer
+      institution: Intel Corporation, Folsom, CA
+      year: Jun 2002 - Feb 2006
+      description:
+        - Designed I/O Controller Hub Chipsets
+        - ASIC hardware design and verification
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Clinical and Laboratory Research in Ophthalmology and Neuroscience
+      institution: University of California, San Francisco (UCSF)
+      year: Dec 2013 - Sep 2014
+      description:
+        - Conducted clinical research exploring connections between neurodegenerative brain diseases and glaucoma
+        - Coordinated volunteer recruitment and cognitive testing protocols
+        - Performed laboratory research on glaucomatous neuropathy causes using advanced imaging techniques
+        - Utilized genotyping and mouse model analysis to investigate disease mechanisms
+        - Contributed to translational research bridging clinical observations and basic science
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Statistical Analysis & Math
+      items:
+        - Machine Learning, AI, and Revenue Forecasting
+        - Statistical Analysis, Causal Inference, A/B Testing
+        - Experimental Design, Data Mining
+        - Strong foundation in Physics, Economics, and Mathematical software
+    - title: Data Products & Systems
+      items:
+        - Full-cycle pipeline development and data architecture
+        - BigQuery, Snowflake, ETL frameworks, dbt, Airflow
+        - Petabyte-scale pipelines, data modeling, data governance
+        - Data warehousing, CI/CD, data security
+        - Project Management and SLA definition
+    - title: Programming Skills
+      items:
+        - Exceptional coding in SQL, Python, and Java
+        - Data preparation and analysis
+    - title: Product & Collaboration
+      items:
+        - Business Strategy and Strategic Planning
+        - KPI definition and business metrics
+        - UX Collaboration and Stakeholder management
+        - Decision Making and Mentoring
+    - title: Cloud & DevOps
+      items:
+        - GCP and AWS (public cloud)
+        - Docker and Kubernetes
+        - Cloud-native workflows
+
+- title: Key Achievements
+  type: list
+  contents:
+    - Built Google Cloud's first unified $XXB+ revenue platform serving 8,000+ daily users
+    - Led AI/ML initiative that saved $100M in one quarter through strategic asset optimization
+    - Created $10B+ CapEx Long-Range Planning process and data infrastructure
+    - Scaled Cloud Technology Partnerships org from 50 to 225+ employees
+    - Developed HR resource allocation system scaled across Google engineering
+
+- title: Awards & Honors
+  type: time_table
+  contents:
+    - title: GMAT Score - 760 (99th percentile)
+      year: 2005
+      description:
+        - Exceptional performance on Graduate Management Admission Test
+    - title: Magna Cum Laude
+      institution: University of the Pacific
+      year: 2002
+      description:
+        - Graduated with high honors in Computer Engineering
+
+- title: References
+  type: list
+  contents:
+    - References and recommendations available on LinkedIn
+    - 10+ professional endorsements from Google colleagues
+    - Contact information for references available upon request

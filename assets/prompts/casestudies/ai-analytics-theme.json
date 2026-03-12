@@ -1,0 +1,5 @@
+{
+  "name": "ai-analytics-theme",
+  "category": "casestudies",
+  "prompt": "Minimal technical architecture diagram in Google's engineering documentation style. White background with ample spacing. Five boxes in horizontal flow connected by thin grey arrows: \"Documents\" → \"Chunking (256 tokens)\" → \"Embeddings\" → \"Vector DB\" → \"LLM Output\". Small technology logos below at 30% opacity. Text annotation \"k=8 retrieval\" with thin line pointing to Vector DB. All boxes are simple rectangles with 1px grey borders. Charcoal text in Inter font. Single ember accent (#D95B43) highlighting the \"256\" number only. Flat design like diagrams from Google's technical blog."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "methodology-framework",
+  "category": "philosophy",
+  "prompt": "Simple methodology visualization. White background. Three overlapping circles (Venn diagram style) with very thin grey outlines. Circles labeled \"Data\" (top left), \"Engineering\" (top right), \"Business\" (bottom). Intersection area has single word \"VALUE\" in ember orange (#D95B43). Outside each circle, one small grey text: \"Analysis\", \"Systems\", \"Strategy\". Minimal, geometric, lots of white space. Inter font."
+}

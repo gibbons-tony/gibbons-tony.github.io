@@ -1,0 +1,387 @@
+{
+  "basics": {
+    "name": "M. Tony Gibbons",
+    "label": "Engineering Leader | Strategic Finance Practitioner | Data Science Innovator",
+    "image": "",
+    "email": "tony@emberagenticlabs.com",
+    "phone": "",
+    "url": "https://gibbons-tony.github.io",
+    "summary": "Engineering leader, strategic finance practitioner, and data science innovator with expertise spanning silicon to P&L. Builder of intelligent systems that drive business impact—from the hardware layer to the P&L statement.",
+    "location": {
+      "city": "San Francisco Bay Area",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "markagibbons",
+        "url": "https://linkedin.com/in/markagibbons"
+      },
+      {
+        "network": "GitHub",
+        "username": "gibbons-tony",
+        "url": "https://github.com/gibbons-tony"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Google, Cloud Finance Transformation",
+      "position": "Data Analytics and Engineering Manager",
+      "url": "",
+      "startDate": "2020-03-01",
+      "endDate": "",
+      "summary": "Leading data analytics and engineering initiatives for Google Cloud's finance transformation.",
+      "highlights": [
+        "Drove the complete product lifecycle for Google Cloud's first unified $30B+ revenue platform by researching and designing business logic, using Python for EDA, and coding the foundational SQL data pipeline",
+        "Established data governance processes to ensure confidentiality and scaled the platform from zero to over 8,000 daily active users",
+        "Initiated and drove a second product lifecycle to build a full $30B+ granular P&L profitability data solution",
+        "Hired and led a new Business Systems Analyst (BSA) team of 4, providing executive leadership with project updates",
+        "Spearheaded novel AI/ML finance tools, including dashboards enabling natural language (RAG) queries and ML models for root-cause-analysis"
+      ]
+    },
+    {
+      "name": "Google, Data Center Supply Chain",
+      "position": "Finance Manager",
+      "url": "",
+      "startDate": "2019-01-01",
+      "endDate": "2020-02-01",
+      "summary": "Led finance and analytics initiatives for Google's data center supply chain operations.",
+      "highlights": [
+        "Led an AI/ML-driven strategic asset optimization initiative that improved operational efficiency and saved $100M in one quarter",
+        "Used Machine Learning and regression techniques to predict stranded inventory and identify alternate usage scenarios",
+        "Led a new Financial Planning & Analysis (FP&A) team, creating a $10B+ CapEx Long-Range Planning process",
+        "Developed data infrastructure aligned with statistical forecasting methodologies for Infrastructure Finance"
+      ]
+    },
+    {
+      "name": "Google, Cloud Technology Partnerships Strategy",
+      "position": "Technical Program Manager",
+      "url": "",
+      "startDate": "2017-06-01",
+      "endDate": "2018-12-01",
+      "summary": "Drove strategic operations for the Cloud Technology Partnerships organization.",
+      "highlights": [
+        "Drove strategic operations for the Cloud Technology Partnerships org, supporting its growth from 50 to 225+ employees",
+        "Hired operations lead and managed a Business Intelligence team, architecting new real-time intelligence systems",
+        "Built financial model for forecasting data center ROI used in C-level investment recommendations",
+        "Managed hiring plans and conducted strategic portfolio analysis"
+      ]
+    },
+    {
+      "name": "Google, Data Center Infrastructure R&D",
+      "position": "Senior Financial Analyst",
+      "url": "",
+      "startDate": "2015-03-01",
+      "endDate": "2017-05-01",
+      "summary": "Led innovation in R&D portfolio visibility and profitability with Bart Sano and Nan Boden, addressing massive spend with little control.",
+      "highlights": [
+        "Led Data Center R&D innovation to address massive spend with little control; my team and I created gamified method of capturing 'what people are working on,' providing unprecedented visibility into R&D portfolio profitability",
+        "Solution greenlit by Sundar Pichai and scaled company-wide to 10,000+ users through PMO partnership; became foundation for multi-billion dollar P&L payroll allocation",
+        "Established and managed the multi-$100M annual budget and financial controls for the R&D organization",
+        "Integrated OpEx, CapEx, and HR data to support VP & Director on portfolio and operational planning"
+      ]
+    },
+    {
+      "name": "Cisco, Technical Services",
+      "position": "Strategy & Operations Manager",
+      "url": "",
+      "startDate": "2011-08-01",
+      "endDate": "2013-07-01",
+      "summary": "Led strategic operations initiatives for Technical Services organization."
+    },
+    {
+      "name": "Cisco, Voice Technology Group",
+      "position": "FP&A Business Unit Controller",
+      "url": "",
+      "startDate": "2008-03-01",
+      "endDate": "2011-07-01",
+      "summary": "Managed financial planning and analysis for Voice Technology Business Unit.",
+      "highlights": [
+        "Supported business unit controller functions"
+      ]
+    },
+    {
+      "name": "Intel Corporation",
+      "position": "ASIC Computer Hardware Design Engineer",
+      "location": "Folsom, CA",
+      "url": "",
+      "startDate": "2002-06-01",
+      "endDate": "2006-02-01",
+      "summary": "Designed I/O Controller Hub Chipsets for Intel's processor platforms.",
+      "highlights": [
+        "ASIC hardware design and verification"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "University of California, San Francisco (UCSF)",
+      "location": "San Francisco, CA",
+      "position": "Clinical and Laboratory Research Assistant",
+      "url": "",
+      "startDate": "2013-12-01",
+      "endDate": "2014-09-01",
+      "summary": "Conducted clinical and laboratory research in ophthalmology and neuroscience.",
+      "highlights": [
+        "Conducted clinical research exploring connections between neurodegenerative brain diseases and glaucoma",
+        "Coordinated volunteer recruitment and cognitive testing protocols",
+        "Performed laboratory research on glaucomatous neuropathy causes using advanced imaging techniques",
+        "Utilized genotyping and mouse model analysis to investigate disease mechanisms"
+      ]
+    },
+    {
+      "organization": "Student-Run Venture Capital Fund",
+      "location": "Provo, UT",
+      "position": "Director of Research and Analysis",
+      "url": "",
+      "startDate": "2006-08-01",
+      "endDate": "2008-05-01",
+      "summary": "Led research and analysis for student-run venture capital fund during MBA program at Brigham Young University.",
+      "highlights": [
+        "Evaluated early-stage investment opportunities",
+        "Conducted due diligence on startup companies",
+        "Led investment analysis and recommendations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, CA",
+      "url": "https://www.berkeley.edu/",
+      "area": "Information and Data Science",
+      "studyType": "Master of Information and Data Science (MIDS)",
+      "startDate": "2023-05-01",
+      "endDate": "2025-01-01",
+      "courses": ["AI", "Machine Learning", "Data Analytics", "Statistical Analysis"]
+    },
+    {
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, CA",
+      "url": "https://www.berkeley.edu/",
+      "area": "Health Professions",
+      "studyType": "Health Professions Certificate",
+      "startDate": "2011-01-01",
+      "endDate": "2014-01-01",
+      "courses": ["Biology", "Chemistry", "Organic Chemistry", "Physics", "Biochemistry"]
+    },
+    {
+      "institution": "Brigham Young University",
+      "location": "Provo, UT",
+      "url": "https://www.byu.edu/",
+      "area": "Business Administration",
+      "studyType": "Master of Business Administration (MBA)",
+      "startDate": "2006-08-01",
+      "endDate": "2008-05-01",
+      "courses": ["Business Strategy", "Financial Management"]
+    },
+    {
+      "institution": "University of the Pacific",
+      "location": "Stockton, CA",
+      "url": "https://www.pacific.edu/",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "1998-09-01",
+      "endDate": "2002-05-01",
+      "score": "Magna Cum Laude",
+      "courses": ["Computer Hardware", "Software Engineering"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Magna Cum Laude",
+      "date": "2002-05-01",
+      "awarder": "University of the Pacific",
+      "summary": "Graduated with high honors in Computer Engineering"
+    },
+    {
+      "title": "GMAT Score: 760 (99th percentile)",
+      "date": "2005-02-01",
+      "awarder": "Graduate Management Admission Council",
+      "summary": "Exceptional performance on Graduate Management Admission Test"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Health Professions Certificate",
+      "date": "2014-01-01",
+      "issuer": "University of California, Berkeley",
+      "icon": "fa-solid fa-graduation-cap"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Statistical Analysis & Mathematics",
+      "level": "Expert",
+      "icon": "fa-solid fa-chart-line",
+      "keywords": [
+        "Machine Learning",
+        "AI",
+        "Revenue Forecasting",
+        "Statistical Analysis",
+        "Causal Inference",
+        "A/B Testing",
+        "Experimental Design",
+        "Data Mining"
+      ]
+    },
+    {
+      "name": "Data Products & Systems",
+      "level": "Expert",
+      "icon": "fa-solid fa-database",
+      "keywords": [
+        "Full-cycle pipeline development",
+        "Data architecture",
+        "BigQuery",
+        "Snowflake",
+        "ETL frameworks",
+        "dbt",
+        "Airflow",
+        "Petabyte-scale pipelines",
+        "Data modeling",
+        "Data governance",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Product & Collaboration",
+      "level": "Expert",
+      "icon": "fa-solid fa-users",
+      "keywords": [
+        "Business Strategy",
+        "Strategic Planning",
+        "KPI definition",
+        "UX Collaboration",
+        "Stakeholder management",
+        "Mentoring"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cloud",
+      "keywords": [
+        "GCP",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Cloud-native workflows"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Python",
+      "fluency": "Expert",
+      "icon": "fa-brands fa-python"
+    },
+    {
+      "language": "SQL",
+      "fluency": "Expert",
+      "icon": "fa-solid fa-database"
+    },
+    {
+      "language": "Java",
+      "fluency": "Proficient",
+      "icon": "fa-brands fa-java"
+    },
+    {
+      "language": "C++",
+      "fluency": "Proficient",
+      "icon": "fa-solid fa-code"
+    },
+    {
+      "language": "R",
+      "fluency": "Proficient",
+      "icon": "fa-brands fa-r-project"
+    },
+    {
+      "language": "Perl",
+      "fluency": "Proficient",
+      "icon": "fa-solid fa-terminal"
+    },
+    {
+      "language": "Verilog/VHDL",
+      "fluency": "Proficient",
+      "icon": "fa-solid fa-microchip"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Artificial Intelligence & Machine Learning",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "Agentic AI Systems",
+        "Large Language Models",
+        "RAG Systems",
+        "Computer Vision",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "name": "Finance Technology",
+      "icon": "fa-solid fa-chart-pie",
+      "keywords": [
+        "Financial Analytics",
+        "Revenue Forecasting",
+        "Cost Optimization",
+        "Strategic Planning"
+      ]
+    },
+    {
+      "name": "Healthcare & Neuroscience",
+      "icon": "fa-solid fa-heartbeat",
+      "keywords": [
+        "Neurodegenerative Diseases",
+        "Clinical Research",
+        "Translational Medicine"
+      ]
+    },
+    {
+      "name": "Hardware & Systems",
+      "icon": "fa-solid fa-microchip",
+      "keywords": [
+        "ASIC Design",
+        "Computer Architecture",
+        "Data Center Infrastructure"
+      ]
+    },
+    {
+      "name": "Personal Interests",
+      "icon": "fa-solid fa-person-hiking",
+      "keywords": [
+        "Adventure Travel",
+        "Motorcycling",
+        "MMA",
+        "SCUBA Diving",
+        "Hiking & Outdoors",
+        "Power Lifting",
+        "Science Fiction & Fantasy Literature",
+        "Film & Animation",
+        "Auto & Motorcycle Racing"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Anand Jeyaraman",
+      "icon": "fa-solid fa-user",
+      "reference": "Mark has a rare combination of deep financial acumen and strong technical skills. His proficiency in Python, data science, SQL and machine learning is exceptional. His transparent leadership style, mentorship abilities, and capacity to empower team members while providing clear direction demonstrate his exceptional leadership qualities."
+    },
+    {
+      "name": "Gurkan Yilmaz",
+      "icon": "fa-solid fa-user",
+      "reference": "Mark is able to translate complex analysis to structured simple messages. He is eager to learn new skills and has desire to push the technology boundaries (SQL, automation). His collaborative problem-solving abilities on complicated projects and commitment to advancing technical capabilities make him an invaluable team member."
+    }
+  ],
+  "projects": [
+    {
+      "name": "UC Berkeley MIDS Portfolio",
+      "summary": "Collection of data science and machine learning projects demonstrating expertise in RAG systems, computer vision, NLP, and cloud-native architectures. See the Projects tab for detailed case studies and implementations.",
+      "highlights": ["RAG Systems", "Computer Vision", "NLP", "Cloud Architecture"],
+      "url": "/projects/"
+    }
+  ]
+}

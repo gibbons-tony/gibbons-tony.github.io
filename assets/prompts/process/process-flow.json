@@ -1,0 +1,5 @@
+{
+  "name": "process-flow",
+  "category": "process",
+  "prompt": "Simple process flow visualization. White background. Five rectangles in a horizontal line, connected by thin grey arrows. Rectangles contain: \"Define\", \"Research\", \"Design\", \"Build\", \"Deploy\". All rectangles are borderless, just text. The \"Build\" rectangle text is in ember orange (#D95B43), others in charcoal. Below the entire flow, small grey text: \"Iterative • Agile • Data-Driven\". Minimal Inter font. Generous white space."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "devops-pipeline",
+  "category": "technology",
+  "prompt": "Minimalist CI/CD pipeline flow. White background. Five circles connected by thin grey lines in horizontal layout: \"Code\" → \"Build\" → \"Test\" → \"Deploy\" → \"Monitor\". Each circle is just a thin grey outline with text inside. The \"Deploy\" circle has ember orange (#D95B43) outline instead of grey. Below each circle, tiny grey text with examples like \"GitHub\", \"Docker\", \"Jest\", \"K8s\", \"Datadog\". Clean, lots of white space, Inter font."
+}
