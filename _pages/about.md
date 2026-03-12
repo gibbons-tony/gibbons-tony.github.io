@@ -1,72 +1,25 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /
-subtitle: <b>Insatiably Curious Builder</b> • AI Innovator • Strategic Finance Leader
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false
+  image_circular: false # crops the image to make it circular
   more_info: >
-    <p>San Francisco Bay Area</p>
-    <p>AI & Strategic Finance</p>
+    <p>555 your office number</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
 
-news: true
-selected_papers: false
-social: true
+news: true # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
-> "The best way to predict the future is to invent it—by creating pull, not pushing solutions."
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-## Welcome
+Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-I'm Tony Gibbons, an innovator at the intersection of **AI, engineering, and strategic finance**. From building AI systems that generated **$30B+ in enterprise value** to developing the **Crucible AI orchestration framework** with **1.7M lines of code in 31 days**, I transform complex challenges into scalable solutions.
-
-## Current Focus
-
-**Building the Future of AI Development**: Leading the evolution of multi-agent AI orchestration through Crucible, featuring:
-- **13 specialized AI personas** working in concert
-- **Knowledge graphs** for semantic understanding beyond 100K lines
-- **Self-improving architecture** that evolves with each iteration
-- **UAT investment strategy** ensuring stakeholder alignment
-
-## Professional Journey
-
-### AI & Data Science Leadership
-- **Chief Data Scientist** roles driving **$200M+ revenue improvements**
-- Pioneered **AI Analytics Assistant** serving 4,200+ SMEs (proactive crawl-walk-run strategy)
-- Led **45+ ML implementations** across Fortune 500 enterprises
-- Built teams and capabilities from scratch at multiple organizations
-
-### Strategic Finance Innovation
-- **VP Finance** managing **$5B technology portfolio** with 300% efficiency gain
-- Transformed R&D portfolio visibility (**$30B enterprise value impact**)
-- Architected financial systems processing **$2.2B annually**
-- Created profitability frameworks adopted enterprise-wide
-
-### Technical Architecture
-- Designed distributed systems handling **10M+ daily requests**
-- Built RAG systems with **sub-second latency** at enterprise scale
-- Implemented computer vision for **$50M+ cost reduction**
-- Created self-healing ETL pipelines with **99.9% uptime**
-
-## Philosophy: Creating Pull, Not Push
-
-My approach centers on **building solutions so compelling they create their own demand**. You can't push a rope up a hill—but you can create systems that naturally draw people in. This philosophy has guided every successful transformation I've led.
-
-### Key Principles:
-- **UAT as Investment**: Testing isn't validation—it's stakeholder investment
-- **Rocket & Landing Pad**: Match ambitious projects with solid foundations
-- **Virtuous Cycles**: Build systems that improve themselves through use
-- **Cross-Disciplinary Advantage**: Innovation happens at intersections
-
-## Recent Achievement: Berkeley → Crucible
-
-The Crucible journey began in Berkeley's intensive MIDS program, where late-night coding sessions and collaborative problem-solving laid the foundation. What started as understanding distributed computing evolved into building one of the most sophisticated AI orchestration systems—**1.7M lines in 31 days**, demonstrating that with the right foundation, extraordinary velocity is possible.
-
-## Let's Build Something Extraordinary
-
-I'm always interested in connecting with fellow builders, innovators, and organizations tackling complex challenges at the intersection of AI and business value.
-
-[Get in touch](mailto:contact@example.com) | [View Projects](/projects/) | [Read Blog](/blog/)
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
