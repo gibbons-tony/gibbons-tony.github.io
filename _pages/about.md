@@ -57,3 +57,4 @@ The full story—$XXB platforms, nine-figure savings, organizational transformat
 **Beyond the work**, I'm passionate about mentoring data scientists and engineers—I'm at my best in player-coach roles where I can architect systems, lead technical teams, and be hands-on building solutions.
 
 **Currently**: Building AI products at Ember Agentic Labs while exploring opportunities to work on hard technical problems with exceptional teams—particularly in player-coach roles where I can architect systems, lead, and build hands-on.
+<!-- Cache bust: Fri Mar 13 15:49:38 PDT 2026 -->
