@@ -1,0 +1,337 @@
+/*******************************************************************************
+ * Case Studies Magazine-Style Layout
+ ******************************************************************************/
+
+// Float classes for magazine-style text wrapping
+.float-right {
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+  max-width: 50%;
+
+  @media (max-width: 768px) {
+    float: none;
+    margin: 1.5rem 0;
+    max-width: 100%;
+  }
+}
+
+.float-left {
+  float: left;
+  margin: 0 2rem 1.5rem 0;
+  max-width: 50%;
+
+  @media (max-width: 768px) {
+    float: none;
+    margin: 1.5rem 0;
+    max-width: 100%;
+  }
+}
+
+// Narrower floats for smaller images
+.float-right-narrow {
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+  max-width: 40%;
+
+  @media (max-width: 768px) {
+    float: none;
+    margin: 1.5rem 0;
+    max-width: 100%;
+  }
+}
+
+.float-left-narrow {
+  float: left;
+  margin: 0 2rem 1.5rem 0;
+  max-width: 40%;
+
+  @media (max-width: 768px) {
+    float: none;
+    margin: 1.5rem 0;
+    max-width: 100%;
+  }
+}
+
+// Full width images (default)
+.full-width {
+  width: 100%;
+  margin: 2rem 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+// Caption styling for floated images
+.float-right .caption,
+.float-left .caption,
+.float-right-narrow .caption,
+.float-left-narrow .caption {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+// Pull quote styling
+.pull-quote {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--global-theme-color);
+  border-left: 4px solid var(--global-theme-color);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+
+  &.float-right,
+  &.float-left {
+    max-width: 40%;
+    font-size: 1.15rem;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Clearfix for sections with floated elements
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Case study specific improvements
+.casestudy-content {
+  h2 {
+    clear: both; // Ensure headers start on new line after floated elements
+    margin-top: 3rem;
+
+    &:first-of-type {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Add breathing room to paragraphs
+  p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+  }
+
+  // Style for metrics/stats callouts
+  .metric-callout {
+    background: var(--global-bg-color);
+    border-left: 4px solid var(--global-theme-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+
+    strong {
+      color: var(--global-theme-color);
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// Two-column layout option for side-by-side comparisons
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+// Enhanced Metric Callout with Icon
+.metric-callout {
+  background: linear-gradient(135deg,
+    rgba(217, 91, 67, 0.05) 0%,
+    rgba(217, 91, 67, 0.1) 100%);
+  border-left: 4px solid var(--global-theme-color);
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+
+  .metric-icon {
+    font-size: 3rem;
+    color: var(--global-theme-color);
+    margin-bottom: 1rem;
+  }
+
+  strong {
+    color: var(--global-theme-color);
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.75rem;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: var(--global-text-color);
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+// Metrics Grid
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+
+  .metric-card {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(var(--global-theme-color-rgb), 0.05);
+    border-radius: 12px;
+    border: 2px solid rgba(var(--global-theme-color-rgb), 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: var(--global-theme-color);
+      box-shadow: 0 8px 24px rgba(var(--global-theme-color-rgb), 0.2);
+    }
+
+    .metric-icon {
+      font-size: 2.5rem;
+      color: var(--global-theme-color);
+      margin-bottom: 1rem;
+    }
+
+    .metric-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--global-text-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-label {
+      font-size: 0.95rem;
+      color: var(--global-text-color-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+// Timeline Visualization
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  margin: 3rem 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg,
+      var(--global-theme-color) 0%,
+      rgba(217, 91, 67, 0.3) 100%);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-number {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 42px;
+      height: 42px;
+      background: var(--global-theme-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 12px rgba(217, 91, 67, 0.3);
+    }
+
+    .timeline-content {
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+      }
+
+      p {
+        margin: 0;
+        color: var(--global-text-color-light);
+      }
+    }
+  }
+}
+
+// Before/After Comparison Cards
+.comparison-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-card {
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--global-divider-color);
+
+    &.before {
+      background: rgba(244, 67, 54, 0.05);
+      border-color: rgba(244, 67, 54, 0.3);
+
+      .label {
+        color: #f44336;
+      }
+    }
+
+    &.after {
+      background: rgba(76, 175, 80, 0.05);
+      border-color: rgba(76, 175, 80, 0.3);
+
+      .label {
+        color: #4caf50;
+      }
+    }
+
+    .label {
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .metric {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      color: var(--global-text-color-light);
+    }
+  }
+}

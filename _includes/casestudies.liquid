@@ -1,0 +1,20 @@
+<div class="col">
+  <a href="{{ casestudy.url | relative_url }}">
+    <div class="card h-100 hoverable">
+      {% if casestudy.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=casestudy.img
+          sizes = "250px"
+          alt="case study thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ casestudy.title }}</h2>
+        <p class="card-text">{{ casestudy.summary }}</p>
+      </div>
+    </div>
+  </a>
+</div>
