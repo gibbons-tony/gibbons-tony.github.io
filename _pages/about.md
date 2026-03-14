@@ -26,35 +26,30 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Engineering leader with expertise spanning silicon to P&L to AI. I've designed chips at Intel, managed finance operations at Google, and built the analytics platform that became the single source of truth for Google Cloud's $XXB+ business—scaling to 8,000+ internal users across the Cloud organization and delivering ongoing nine-figure savings every quarter through ML-driven operations. Now I'm building AI agents that help people make better decisions.
+**Full-Spectrum Systems Architect** bridging foundational engineering with enterprise strategy. With a foundation spanning a BS in Computer Engineering, an MBA, and a Master's in Data Science, I navigate the entire technology stack—from ASIC hardware and hyperscale data centers to venture capital and AI application design. I build from zero-to-one, architecting complex systems that drive multi-billion-dollar ecosystems.
 
-**The Foundation**
+**The Synthesis**
 
-I started at Intel designing chips—PCI Express controllers, low-power architectures, innovation at the silicon level. But I noticed that engineers executed what we were told to build. The real decisions—what to build, which markets to target, when to ship—came from strategy and finance teams. I wanted to understand how those decisions were made.
+After two decades building decision-making systems—from silicon at Intel to massive platforms at Google—my focus is now on systems that drive radical human productivity. At **Ember Agentic Labs**, I develop Applied AI: specialized, autonomous agents that operate within governed boundaries to deliver tangible enterprise outcomes.
 
-**The Expansion**
+**What I am Building**
 
-So I got my MBA in Finance. I learned how money shapes technology—how P&Ls drive product roadmaps, how market dynamics determine feature prioritization, how financial constraints shape technical architecture. At Google, I put that understanding to work.
+**Crucible** is this vision in production. It is an orchestration of specialized AI agents managing the complete software development lifecycle. Built solo in 25 days—1.1M lines of code, zero critical bugs—it proves that multi-agent systems can execute mission-critical workflows today.
 
-At Google, I progressively moved through FP&A, TPM/Operations, and Data Analytics Architecture, building systems that connected the technical and financial worlds. The [revenue platform I built](/casestudies/the_xxb_revenue_platform/) grew from 0 to 8,000 daily active users, becoming the single source of truth for Google Cloud's $XXB+ business. I created the [first credible customer P&L](/casestudies/profitability_framework/) with >100K SKUs, unlocking millions in optimization opportunities. I [saved $100M+ in a single quarter](/casestudies/the_100m_inventory_project/) combining root-cause analysis with machine learning to solve a data center inventory crisis.
+The true breakthrough is **scale without amnesia**. By utilizing advanced data science, structured data, and behavioral reinforcement, Crucible shatters traditional LLM context limits. It integrates the governance, persistent memory, and constraints required to make AI reliable at scale—transforming AI from a brilliant individual contributor into a cohesive organization with institutional memory.
 
-The work earned recognition—including a time-tracking system [greenlit by Sundar Pichai](/casestudies/time_tracking_app/) that became the foundation for payroll allocation in Google's multi-billion dollar P&L framework.
+**The Future I See**
 
-**The Next Frontier**
+We are past the theoretical phase of AI. The challenge now is bridging raw capability with real-world application. This requires a full-stack perspective: understanding how hardware limits software, how finance drives technology, and how humans adopt tools. My background as a hardware engineer, financial strategist, and AI architect uniquely positions me to build these bridges.
 
-With platforms serving 8,000+ users and delivering nine-figure impact, I saw where technology was heading. AI and ML weren't just incremental improvements—they would fundamentally change how systems could work. I wanted to be at the forefront of that shift.
+Current focus areas:
+- **Agentic orchestration** beyond standard context limits
+- **Persistent, queryable memory** via knowledge graphs
+- **Enterprise-scale behavioral governance** for AI
+- **Domain-specific applications** (travel, automotive, collectibles)
 
-I pursued UC Berkeley's Master's in Data Science to build deep technical expertise in the next wave. RAG systems, computer vision, NLP, cloud-native ML architectures—mastering the full stack from theory to production infrastructure. I applied these skills in real-time at Google Cloud, building AI-powered analytics assistants that let business users query billion-dollar datasets through natural language. The combination was powerful: two decades spanning silicon design, strategic finance, and platform architecture, now enhanced with cutting-edge AI capabilities.
+**What is Next**
 
-**What's Next**
+I am currently focused on pushing the boundaries of Applied AI at Ember Agentic Labs, tackling the hardest problems at the intersection of AI and enterprise architecture. While my primary dedication is to building these systems, I am always open to engaging in transformative collaborations and conversations with exceptional teams.
 
-We're past the hype cycle. The real opportunity isn't another generic chatbot—it's agents woven into specific use cases that actually work for people. At **Ember Agentic Labs**, I'm building AI-powered products in areas I'm passionate about—adventure travel, vehicles, collectibles—using foundation models tailored with domain expertise into practical tools that solve real problems.
-
-The full story—$XXB platforms, nine-figure savings, organizational transformation at scale—is in my [case studies](/casestudies/). My technical [projects](/projects/) showcase the latest: RAG knowledge systems, computer vision, NLP, and cloud MLOps.
-
----
-
-**Beyond the work**, I'm passionate about mentoring data scientists and engineers—I'm at my best in player-coach roles where I can architect systems, lead technical teams, and be hands-on building solutions.
-
-**Currently**: Building AI products at Ember Agentic Labs while exploring opportunities to work on hard technical problems with exceptional teams—particularly in player-coach roles where I can architect systems, lead, and build hands-on.
-<!-- Cache bust: Fri Mar 13 15:49:38 PDT 2026 -->
+Dive into the technical depth in my [projects](/projects/), the business impact in my [case studies](/casestudies/), and the full journey in my [bio](/bio/).
