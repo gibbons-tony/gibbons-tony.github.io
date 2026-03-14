@@ -3,7 +3,7 @@ layout: casestudy
 title: "Time Tracking & Resource Allocation App"
 description: Building company-wide system for activity tracking that became foundation for billion-dollar P&L allocation
 summary: Built web app greenlit by Sundar Pichai, scaled company-wide with PMO, and years later became the foundation for payroll allocation in multi-billion dollar P&L framework
-img: assets/img/casestudies/time_tracking/result.jpg
+img: assets/img/casestudies/data-architecture.png
 importance: 0
 category: Professional
 metrics:
@@ -16,11 +16,6 @@ metrics:
 ---
 
 ## The Challenge
-
-{% include figure.liquid path="assets/img/casestudies/time_tracking/situation.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    The organizational chaos: 4 hours weekly per employee spent on manual tracking across disparate Excel spreadsheets
-</div>
 
 <div class="pull-quote float-right">
 "An early-career project that, years later, became the foundation for billion-dollar P&L payroll allocation"
@@ -52,11 +47,6 @@ Technology alone wouldn't drive adoption—I needed an organizational process:
 
 **3. Scaled Company-Wide with PMO**
 
-{% include figure.liquid path="assets/img/casestudies/time_tracking/action.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    Building and scaling: From 10 users to 1,000 in 3 months, reaching 10,000 users company-wide within the year
-</div>
-
 Partnered with the Program Management Office to scale beyond my immediate team:
 - Aligned with annual planning cycles
 - Secured executive sponsorship
@@ -64,11 +54,6 @@ Partnered with the Program Management Office to scale beyond my immediate team:
 - Integrated into official planning processes
 
 **4. Executive Greenlight from Sundar Pichai**
-
-{% include figure.liquid path="assets/img/casestudies/time_tracking/task.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    Executive mandate: Sundar Pichai's approval to build systematic tracking for 10,000+ employees
-</div>
 
 The project's strategic value was recognized at the highest level—**Sundar Pichai himself greenlit the initiative**, providing the executive backing needed for company-wide adoption.
 
@@ -83,11 +68,6 @@ The system became embedded in Google's annual planning process and continued to 
 - **Planning efficiency**: Reduced time spent on manual data collection during planning cycles
 
 **Long-Term Value (The Full-Circle Story):**
-
-{% include figure.liquid path="assets/img/casestudies/time_tracking/result.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    Full-circle impact: 85% reduction in manual work, still mission-critical today as foundation for billion-dollar P&L allocation
-</div>
 
 Years later, when I was building the [Cost & Profitability Framework](/casestudies/profitability_framework/), I discovered my time tracking system was **still in use**—its functionality had been integrated into the official 'moma' suite.
 

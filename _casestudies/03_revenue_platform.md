@@ -3,7 +3,7 @@ layout: casestudy
 title: "The $XXB+ Revenue Platform"
 description: Building Google Cloud's revenue analytics platform from 0 to 8,000 daily active users
 summary: Rescued failed project and built trusted revenue platform from 0 to 8,000 users, enabling 32% Y/Y growth through data-driven decisions
-img: assets/img/casestudies/revenue/result.jpg
+img: assets/img/casestudies/revenue-platform-impact.png
 importance: 3
 category: Professional
 metrics:

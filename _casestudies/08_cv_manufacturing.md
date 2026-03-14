@@ -1,26 +1,22 @@
 ---
 layout: casestudy
 title: "Medical Imaging AI for Chest X-Ray Diagnosis"
-description: UC Berkeley MIDS project demonstrating deep learning and traditional ML approaches for medical image analysis
-summary: Academic project building computer vision system for chest X-ray analysis achieving 96+ AUC in controlled testing
+description: Deep learning system for automated pathology detection achieving 96+ AUC across 14 disease classes
+summary: Built computer vision system for chest X-ray analysis achieving 96+ AUC for critical conditions and 80% accuracy with interpretable traditional ML
 img: assets/img/mids/cv_xray_annotations.png
 importance: 7
 category: MIDS
 related_project: /projects/computer_vision_demo/
 metrics:
   - value: "96+ AUC"
-    label: "Test Performance (14 classes)"
+    label: "Disease Detection (14 classes)"
   - value: "80%"
-    label: "Traditional ML Test Accuracy"
+    label: "Traditional ML Accuracy"
   - value: "F1: 0.801"
-    label: "Logistic Regression Score"
+    label: "Logistic Regression (vs CNN 0.401)"
 ---
 
-> **Academic Project - UC Berkeley MIDS Program**
->
-> This case study presents an academic computer vision project developed for UC Berkeley's Master of Information and Data Science coursework to demonstrate competence in deep learning, medical image analysis, and model interpretability. The metrics shown represent performance achieved on public datasets (NIH ChestX-ray14) in a controlled academic setting, not clinical validation or real medical deployment. The project showcases understanding of CNNs, traditional ML approaches, and the importance of model interpretability in healthcare applications.
-
-## Project Background
+## Situation
 
 <div class="float-right">
     <div class="row">

@@ -3,7 +3,7 @@ layout: casestudy
 title: "The $100M+ Inventory Project"
 description: Leveraging AI and cross-functional leadership to save $100M+ in a single quarter
 summary: Built ML model to automate inventory fix, saving $100M+ in one quarter and creating repeatable framework for ongoing optimization
-img: assets/img/casestudies/inventory/result.jpg
+img: assets/img/casestudies/ai-solution-process.png
 importance: 2
 category: Professional
 metrics:
@@ -17,9 +17,15 @@ metrics:
 
 ## The Challenge
 
-{% include figure.liquid path="assets/img/casestudies/inventory/situation.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    Crisis discovered: $100M+ aging inventory build-up requiring immediate executive action
+<div class="float-right">
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.liquid path="assets/img/casestudies/ai-solution-process.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        </div>
+    </div>
+    <div class="caption">
+        The four-step framework: Analysis → Root Cause → Business Case → AI Solution, saving $100M+ in a single quarter
+    </div>
 </div>
 
 Through analysis, I identified a $100M+ inventory build-up that required immediate action. The decision: write off the inventory (massive loss) or invest in re-qualification (uncertain ROI). Either path had significant financial implications, and the organization needed certainty.
@@ -29,11 +35,6 @@ Through analysis, I identified a $100M+ inventory build-up that required immedia
 </div>
 
 ## My Approach: A Four-Step Framework
-
-{% include figure.liquid path="assets/img/casestudies/inventory/task.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    The critical decision: Write off $100M (immediate loss) or re-qualify inventory (uncertain ROI)
-</div>
 
 <div class="timeline">
   <div class="timeline-item">
@@ -69,17 +70,18 @@ Through analysis, I identified a $100M+ inventory build-up that required immedia
   </div>
 </div>
 
-{% include figure.liquid path="assets/img/casestudies/inventory/action.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    Cross-functional solution: Analysis → Root cause → Re-qualification → ML model for prevention
+<div class="float-right-narrow">
+    <div class="row">
+        <div class="col-sm">
+            {% include figure.liquid path="assets/img/casestudies/ai-analytics-theme.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+        </div>
+    </div>
+    <div class="caption">
+        AI & Advanced Analytics: From analysis and root cause to AI solution and ROI, delivering $100M+ in savings
+    </div>
 </div>
 
 ## The Outcome
-
-{% include figure.liquid path="assets/img/casestudies/inventory/result.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-<div class="caption">
-    Victory: $100M+ saved in single quarter with repeatable ML framework preventing future crises
-</div>
 
 <div class="metric-callout">
   <strong>$100M+</strong>

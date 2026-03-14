@@ -34,9 +34,9 @@
       "endDate": "",
       "summary": "Leading data analytics and engineering initiatives for Google Cloud's finance transformation.",
       "highlights": [
-        "Drove the complete product lifecycle for Google Cloud's first unified $30B+ revenue platform by researching and designing business logic, using Python for EDA, and coding the foundational SQL data pipeline",
+        "Drove the complete product lifecycle for Google Cloud's first unified $XXB+ revenue platform by researching and designing business logic, using Python for EDA, and coding the foundational SQL data pipeline",
         "Established data governance processes to ensure confidentiality and scaled the platform from zero to over 8,000 daily active users",
-        "Initiated and drove a second product lifecycle to build a full $30B+ granular P&L profitability data solution",
+        "Initiated and drove a second product lifecycle to build a full $XXB+ granular P&L profitability data solution",
         "Hired and led a new Business Systems Analyst (BSA) team of 4, providing executive leadership with project updates",
         "Spearheaded novel AI/ML finance tools, including dashboards enabling natural language (RAG) queries and ML models for root-cause-analysis"
       ]
@@ -75,12 +75,12 @@
       "url": "",
       "startDate": "2015-03-01",
       "endDate": "2017-05-01",
-      "summary": "Led innovation in R&D portfolio visibility and profitability with Bart Sano and Nan Boden, addressing massive spend with little control.",
+      "summary": "Managed finance and analytics for Google's data center infrastructure R&D organization.",
       "highlights": [
-        "Led Data Center R&D innovation to address massive spend with little control; my team and I created gamified method of capturing 'what people are working on,' providing unprecedented visibility into R&D portfolio profitability",
-        "Solution greenlit by Sundar Pichai and scaled company-wide to 10,000+ users through PMO partnership; became foundation for multi-billion dollar P&L payroll allocation",
         "Established and managed the multi-$100M annual budget and financial controls for the R&D organization",
-        "Integrated OpEx, CapEx, and HR data to support VP & Director on portfolio and operational planning"
+        "Integrated OpEx, CapEx, and HR data to support VP & Director on portfolio and operational planning",
+        "Developed robust data application to automate HR resource allocation for OPEX and portfolio analysis",
+        "Solution scaled across Google engineering and continues to inform core P&L opex apportionments"
       ]
     },
     {

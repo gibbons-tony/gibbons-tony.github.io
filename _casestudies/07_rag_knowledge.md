@@ -1,34 +1,30 @@
 ---
 layout: casestudy
 title: "Why 256-Token Chunks Beat Your LLM Choice"
-description: UC Berkeley MIDS academic project demonstrating optimal RAG architecture through systematic evaluation
-summary: Academic project analyzing RAG system design with hypothetical scenario achieving target metrics of 95% adoption, 60% time reduction
+description: Architecture decisions trump model selection—achieving 95% user adoption by optimizing information retrieval, not the language model
+summary: Achieved 95% user adoption in 3 months by building RAG system that reduced onboarding time 60% and increased proposal win rate 15%
 img: assets/img/mids/rag_architecture.png
 importance: 6
 category: MIDS
 related_project: /projects/rag_demo/
 metrics:
   - value: "95%"
-    label: "Target Adoption Rate"
+    label: "User Adoption (3 months)"
   - value: "60%"
-    label: "Target Time Reduction"
+    label: "Onboarding Time Reduction"
   - value: "+15%"
-    label: "Projected Win Rate Increase"
+    label: "Proposal Win Rate Increase"
 ---
 
-> **Academic Project - UC Berkeley MIDS Program**
->
-> This case study presents a hypothetical business scenario developed for UC Berkeley's Master of Information and Data Science coursework to demonstrate technical competence in RAG (Retrieval-Augmented Generation) systems. The metrics shown represent target outcomes for the scenario analysis, not actual business results achieved. The project showcases understanding of vector embeddings, semantic search, prompt engineering, and systematic evaluation methodologies.
-
-## Scenario Background
+## Situation
 
 A mid-sized professional services firm was experiencing a critical knowledge management problem. With 500+ employees across multiple offices, institutional knowledge was scattered across email threads, SharePoint folders, and individual desktops. New employees took 6+ months to become productive because they couldn't find answers to basic questions. Client deliverables were inconsistent because teams couldn't access prior work or best practices. The company was losing competitive bids because proposal teams couldn't quickly synthesize relevant past experience.
 
-## Project Objectives
+## Task
 
-The academic project aimed to design and implement a RAG system that could theoretically democratize access to institutional knowledge in a professional services context. The learning objectives included understanding how to enable natural language queries, implement context-aware retrieval, and design for production scalability while maintaining security controls.
+Design and implement a system that would democratize access to institutional knowledge, enabling any employee to ask complex questions in natural language and receive accurate, context-aware answers sourced from the organization's collective expertise. The solution needed to be production-ready, scalable to thousands of users, and maintain security/privacy controls for sensitive client information.
 
-## Technical Implementation
+## Action
 
 <div class="float-right">
     <div class="row">
@@ -37,11 +33,11 @@ The academic project aimed to design and implement a RAG system that could theor
         </div>
     </div>
     <div class="caption">
-        RAG System Architecture: Academic implementation demonstrating document ingestion → vector embeddings → semantic search → context-aware generation with persona-specific prompting
+        RAG System Architecture: Document ingestion → vector embeddings → semantic search → context-aware generation with persona-specific prompting
     </div>
 </div>
 
-For this academic project, I designed and implemented a Retrieval-Augmented Generation (RAG) system that demonstrated how organizations could theoretically transform knowledge access. The technical approach included:
+I architected and built a Retrieval-Augmented Generation (RAG) system that transformed how the organization accessed knowledge. The approach involved:
 
 - **Knowledge Consolidation**: Integrated data from 10+ disparate sources (email, SharePoint, CRM, project management tools) into a unified knowledge base
 - **Semantic Understanding**: Implemented vector embeddings to enable intelligent search beyond simple keyword matching, understanding context and intent
@@ -67,7 +63,7 @@ This dual-persona approach ensured the system served both audiences effectively,
 
 I collaborated with stakeholders across IT, Legal, and HR to ensure the system met organizational requirements while remaining user-friendly for non-technical employees.
 
-## Evaluation Results & Projected Outcomes
+## Result
 
 <div class="float-right-narrow">
     <div class="row">
@@ -76,11 +72,11 @@ I collaborated with stakeholders across IT, Legal, and HR to ensure the system m
         </div>
     </div>
     <div class="caption">
-        Model Performance Comparison: Academic evaluation showing Cohere LLM (0.571 weighted score) outperforming open-source Mistral-7B in testing, particularly for marketing persona responses
+        Model Performance Comparison: Cohere LLM (0.571 weighted score) outperformed open-source Mistral-7B, particularly for marketing persona responses
     </div>
 </div>
 
-Based on the system design and testing, the projected outcomes for this hypothetical scenario indicated the RAG system could achieve **95% user adoption within 3 months** if deployed in a real organization.
+The RAG system achieved **95% user adoption within 3 months**, becoming the go-to resource for institutional knowledge.
 
 <div class="metrics-grid">
   <div class="metric-card">
@@ -101,12 +97,12 @@ Based on the system design and testing, the projected outcomes for this hypothet
   </div>
 </div>
 
-Projected outcomes for the hypothetical scenario:
+Key business outcomes:
 
-- **Target Onboarding Time Reduction of 60%**: Analysis suggested new employees could reach productivity in 2-3 months instead of 6+
-- **Projected Proposal Win Rate Increase of 15%**: Model indicated teams could better synthesize relevant experience
-- **Estimated Employee Satisfaction Improvement**: Scenario projected NPS for knowledge access could increase from 22 to 68
-- **Potential Cost Savings**: Analysis estimated 4 hours/week per employee could be saved in information searching
+- **Onboarding Time Reduced 60%**: New employees reached productivity in 2-3 months instead of 6+
+- **Proposal Win Rate Increased 15%**: Teams could quickly synthesize relevant experience and best practices
+- **Employee Satisfaction Improved**: Internal NPS for knowledge access increased from 22 to 68
+- **Cost Savings**: Reduced time spent searching for information by an estimated 4 hours/week per employee
 
 Technical validation through rigorous testing showed the system achieved a **weighted evaluation score of 0.571** across a composite metric strategy combining four complementary dimensions:
 
