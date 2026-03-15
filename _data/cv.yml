@@ -114,11 +114,12 @@
       institution: University of California, San Francisco (UCSF)
       year: Dec 2013 - Sep 2014
       description:
-        - Conducted clinical research exploring connections between neurodegenerative brain diseases and glaucoma
-        - Coordinated volunteer recruitment and cognitive testing protocols
-        - Performed laboratory research on glaucomatous neuropathy causes using advanced imaging techniques
-        - Utilized genotyping and mouse model analysis to investigate disease mechanisms
-        - Contributed to translational research bridging clinical observations and basic science
+        - Conducted clinical research investigating correlation between Alzheimer's disease and optic-neurodegenerative conditions
+        - Administered and analyzed cognitive testing protocols to identify early biomarkers linking brain and ocular neurodegeneration
+        - Performed wet lab experiments on gene-knockout mouse models to study optic nerve damage resilience mechanisms
+        - Coordinated volunteer recruitment and managed clinical trial data for neurodegenerative disease studies
+        - Utilized advanced imaging techniques and genotyping to investigate glaucomatous neuropathy at molecular level
+        - Contributed to translational research bridging clinical observations with fundamental neuroscience discoveries
 
 - title: Technical Skills
   type: nested_list
