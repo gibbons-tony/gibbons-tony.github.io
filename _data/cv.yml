@@ -6,7 +6,7 @@
     - name: Location
       value: Bay Area, California
     - name: Email
-      value: tony@emberagenticlabs.com
+      value: mark.a.gibbons@gmail.com
     - name: LinkedIn
       value: linkedin.com/in/markagibbons
 
@@ -42,7 +42,7 @@
   contents:
     - title: Founder
       institution: Ember Agentic Labs
-      year: Nov 2024 - Present
+      year: Nov 2025 - Present
       description:
         - Founded AI startup focused on multi-agent orchestration and self-improving software systems
         - Developing Crucible platform that enables coherent AI development at scale through innovative knowledge graph architecture
@@ -52,7 +52,7 @@
 
     - title: Data Analytics and Engineering Manager
       institution: Google, Cloud Finance Transformation
-      year: Mar 2020 - Oct 2024
+      year: Mar 2020 - Oct 2025
       description:
         - Drove the complete product lifecycle for Google Cloud's first unified $XXB+ revenue platform by researching and designing business logic, using Python for EDA, and coding the foundational SQL data pipeline
         - Established data governance processes to ensure confidentiality and scaled the platform from zero to over 8,000 daily active users
