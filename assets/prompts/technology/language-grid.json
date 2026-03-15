@@ -1,5 +1,0 @@
-{
-  "name": "language-grid",
-  "category": "technology",
-  "prompt": "Ultra-minimal programming language showcase. Pure white background. 3x3 grid of language names in clean monospace font: \"Python | TypeScript | Go\" (top row), \"React | Node.js | SQL\" (middle row), \"GraphQL | Docker | K8s\" (bottom row). Each cell has very subtle grey border (1px, 10% opacity). One cell (React) highlighted with thin ember orange (#D95B43) border. Lots of padding. No icons, no colors except the single accent. Inspired by Vercel's minimal design language."
-}

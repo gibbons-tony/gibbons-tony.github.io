@@ -1,10 +1,10 @@
 ---
-layout: casestudy
-title: "The $100M+ Inventory Project"
+layout: page
+title: "AI-Driven Inventory Optimization: $100M+ Immediate Savings"
 description: Leveraging AI and cross-functional leadership to save $100M+ in a single quarter through memory re-qualification
 summary: I personally built an analytical pipeline and brought together disconnected stakeholders to identify memory qualification issues, saving $100M+ in one quarter and creating ML-based prevention framework
-img: assets/img/casestudies/inventory/result.jpg
-importance: 2
+img: assets/img/casestudies/inventory_thumb.png
+importance: 3
 category: Professional
 metrics:
   - value: "$100M+"
@@ -17,7 +17,7 @@ metrics:
 
 ## The Challenge
 
-{% include figure.liquid path="assets/img/casestudies/inventory/situation.jpg" class="img-fluid rounded z-depth-1" style="max-width: 45%; float: right; margin: 0 0 20px 20px;" zoomable=true %}
+{% include figure.liquid path="assets/img/casestudies/inventory/situation.jpg" class="img-fluid rounded z-depth-1" style="max-width: 50%; float: right; margin: 0 0 20px 20px;" zoomable=true %}
 
 Through systematic analysis, **I personally built an analytical pipeline** including inventory data and data center build plan supply-demand matching. This revealed a $100M+ inventory build-up that required immediate action.
 

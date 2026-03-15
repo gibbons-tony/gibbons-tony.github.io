@@ -1,5 +1,0 @@
-{
-  "name": "operations-dashboard",
-  "category": "casestudies",
-  "prompt": "Clean analytics dashboard mockup in Google Analytics style. White background (#FFFFFF). Three metric cards at top showing \"$127M saved\" (ember orange #D95B43), \"99.7% uptime\" (green #10B981), \"1.2ms latency\" (blue #2563EB). Below, a simple line chart with grey grid lines, single smooth upward trending line in ember orange. Right sidebar with small list \"Recent Optimizations\" in charcoal text. Minimal, flat design. No shadows or gradients. Inter font throughout. Generous padding between elements."
-}

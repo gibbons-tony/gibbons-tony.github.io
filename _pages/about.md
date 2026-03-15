@@ -52,4 +52,4 @@ Current focus areas:
 
 I am currently focused on pushing the boundaries of Applied AI at Ember Agentic Labs, tackling the hardest problems at the intersection of AI and enterprise architecture. While my primary dedication is to building these systems, I am always open to engaging in transformative collaborations and conversations with exceptional teams.
 
-Dive into the technical depth in my projects, the business impact in my case studies, and the full journey in my bio.
+Dive into the technical depth in my [projects](/projects/), the business impact in my [case studies](/casestudies/), and the full journey in my [bio](/bio/).

@@ -1,5 +1,0 @@
-{
-  "name": "ml-platform-architecture",
-  "category": "casestudies",
-  "prompt": "Simple MLOps platform diagram in Google Cloud Architecture style. White background. Three horizontal layers labeled \"Data Ingestion\" → \"Model Training\" → \"Deployment\". Each layer has 3-4 small rectangular boxes with minimal text. Thin grey connecting lines. Small GCP/AWS/Azure logos at 20% opacity in corner. One ember orange (#D95B43) accent highlighting the \"AutoML\" component. Clean Inter font. Generous white space. No gradients or 3D effects."
-}

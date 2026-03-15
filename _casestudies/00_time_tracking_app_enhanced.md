@@ -1,10 +1,10 @@
 ---
-layout: casestudy
-title: "R&D Portfolio Visibility & Profitability System"
-description: Data Center R&D innovation that gamified resource tracking, provided unprecedented visibility into massive spend, and became foundation for billion-dollar P&L allocation
-summary: Working in Data Center R&D with Bart Sano and Nan Boden, facing massive spend with little control, my team and I created a nimble, gamified method of capturing "what people are working on"—providing unprecedented visibility into R&D portfolio profitability. This innovation, greenlit by Sundar Pichai, scaled company-wide and years later became the foundation for payroll allocation in multi-billion dollar P&L framework
-img: assets/img/casestudies/time_tracking/result.jpg
-importance: 0
+layout: page
+title: "Full-Stack Cloud Application: Company-Wide Work Allocation Platform"
+description: Infrastructure to collect business information for understanding and aligning effort to outcomes—started in Data Center R&D, scaled company-wide, became foundation for billion-dollar P&L allocation
+summary: Working in Data Center R&D with Bart Sano and Nan Boden, my team and I built company-wide application infrastructure to collect business information needed for understanding and aligning effort to outcomes. This platform, greenlit by Sundar Pichai, provided unprecedented visibility into work allocation and years later became the foundation for activity-based cost allocation in our multi-billion dollar P&L framework
+img: assets/img/casestudies/time_tracking_thumb.png
+importance: 6
 category: Professional
 metrics:
   - value: "Data Center R&D"
@@ -23,7 +23,7 @@ metrics:
 "We transformed massive Data Center R&D spend from black box to transparent portfolio with unprecedented visibility"
 </div>
 
-{% include figure.liquid path="assets/img/casestudies/time_tracking/situation.jpg" class="img-fluid rounded z-depth-1" style="max-width: 45%; float: right; margin: 0 0 20px 20px;" zoomable=true %}
+{% include figure.liquid path="assets/img/casestudies/time_tracking/situation.jpg" class="img-fluid rounded z-depth-1" style="max-width: 40%; float: right; margin: 0 0 20px 20px;" zoomable=true %}
 
 Working in **Data Center R&D with leaders Bart Sano and Nan Boden**, I confronted a critical challenge: **massive spend with little control or visibility**. The organization was investing billions in R&D, but lacked any systematic way to understand what teams were actually working on or how those investments translated to business value.
 
@@ -38,7 +38,7 @@ The fundamental questions—"What is our R&D portfolio actually building?" and "
 
 ## Our Innovation: Gamifying R&D Portfolio Visibility
 
-{% include figure.liquid path="assets/img/casestudies/time_tracking/task.jpg" class="img-fluid rounded z-depth-1" style="max-width: 50%; float: left; margin: 0 20px 20px 0;" zoomable=true %}
+{% include figure.liquid path="assets/img/casestudies/time_tracking/task.jpg" class="img-fluid rounded z-depth-1" style="max-width: 45%; float: left; margin: 0 20px 20px 0;" zoomable=true %}
 
 Embodying the "zero-to-one problem solving" approach that excites me, **my team and I created a nimble, fun method of capturing and gamifying "what people are working on"**—transforming a painful compliance task into an engaging system that provided unprecedented visibility into the R&D portfolio and its profitability.
 
@@ -70,7 +70,7 @@ The technical solution was only half the battle—we had to win hearts and minds
 
 **4. Strategic Partnership with PMO for Company-Wide Rollout**
 
-{% include figure.liquid path="assets/img/casestudies/time_tracking/action.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid path="assets/img/casestudies/time_tracking/action.jpg" class="img-fluid rounded z-depth-1" style="max-width: 100%; margin: 20px 0;" zoomable=true %}
 <div class="caption">
 From Data Center R&D innovation to company-wide platform: Our success led to PMO partnership for scale
 </div>

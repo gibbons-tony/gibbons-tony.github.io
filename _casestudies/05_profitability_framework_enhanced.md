@@ -1,15 +1,15 @@
 ---
-layout: casestudy
-title: "Cost & Profitability Framework at $30B+ Scale"
+layout: page
+title: "Google Cloud $XXB P&L: Product & Customer Profitability at Scale"
 description: Building comprehensive P&L profitability solution leveraging my Data Center R&D visibility system for activity-based payroll allocation
 summary: I personally architected the first credible customer P&L with >100K SKU granularity, discovering my Data Center R&D portfolio visibility system had become the foundation for multi-billion dollar payroll allocation—a full-circle validation of building systems that last
-img: assets/img/casestudies/profitability/result.jpg
-importance: 5
+img: assets/img/casestudies/profitability_thumb.png
+importance: 1
 category: Professional
 metrics:
   - value: ">100K SKUs"
     label: "Product-Level Granularity"
-  - value: "$30B+"
+  - value: "$XXB"
     label: "P&L Scale"
   - value: "Full Circle"
     label: "R&D Visibility → P&L Foundation"
@@ -28,7 +28,7 @@ Building on the [Revenue Platform](/casestudies/revenue_platform/) that establis
 - **Which products are actually profitable?**
 - **Which customers drive margins?**
 - **Where should we invest engineering resources?**
-- **How do we allocate $30B in costs accurately?**
+- **How do we allocate $XXB in costs accurately?**
 
 The challenge was unprecedented complexity: **>100,000 product SKUs**, thousands of customers, billions in shared infrastructure costs, and the largest expense category—**engineering payroll**—that needed intelligent allocation across the entire business.
 
@@ -48,43 +48,11 @@ This was a profound moment: The system **my team and I built** to address Data C
 
 **I architected the integration** between my Data Center visibility system and the new profitability framework:
 
-```python
-class PayrollAllocationEngine:
-    def __init__(self):
-        self.portfolio_visibility_source = 'moma.time_tracking'  # My R&D visibility system from Data Center!
-        self.payroll_source = 'sap.payroll_data'
+I designed an innovative cost allocation system that leveraged my earlier R&D portfolio visibility platform. This wasn't theoretical—I built the actual allocation engine that could accurately distribute billions in engineering payroll costs based on how engineers actually spent their time.
 
-    def allocate_engineering_costs(self, period):
-        """
-        Allocate billions in engineering payroll based on actual work
-        This leverages the R&D portfolio visibility data from my Data Center innovation
-        """
-        # Pull work allocation from my original R&D visibility system
-        work_allocation = self.query_portfolio_data("""
-            SELECT
-                employee_id,
-                product_code,
-                customer_segment,
-                hours_allocated,
-                project_type
-            FROM moma.time_tracking
-            WHERE period = %s
-        """, period)
+The breakthrough was connecting actual work (from my time tracking system in Data Center) to financial costs. The system pulled work allocation data showing which employees worked on which products and projects, matched it with payroll data from SAP, and intelligently allocated costs across our entire product portfolio.
 
-        # Match with payroll data
-        payroll_costs = self.get_payroll_costs(period)
-
-        # Intelligent allocation based on actual work
-        allocated_costs = {}
-        for product in self.products:
-            allocated_costs[product] = self.calculate_allocation(
-                time_allocation,
-                payroll_costs,
-                product
-            )
-
-        return allocated_costs
-```
+For the first time, we could answer critical questions like: "How much engineering cost goes into Product X?" or "What's the true R&D investment in our cloud initiatives?" The allocation wasn't based on rough estimates or headcount ratios—it was based on actual work performed, tracked through the system I had built years earlier. This level of precision at billions of dollars scale was unprecedented.
 
 ### 2. Building the Full P&L Stack
 
@@ -95,47 +63,18 @@ From revenue to operating margin: Building the complete profitability picture wi
 
 **I personally designed** the comprehensive P&L structure:
 
-```sql
--- The P&L waterfall I architected
-WITH revenue_base AS (
-    -- Start with revenue platform data
-    SELECT * FROM revenue_platform.consolidated_revenue
-),
-direct_costs AS (
-    -- Direct attribution where possible
-    SELECT
-        product_sku,
-        infrastructure_costs,
-        support_costs,
-        third_party_costs
-    FROM cost_attribution.direct_costs
-),
-allocated_costs AS (
-    -- Use time tracking for engineering allocation
-    SELECT
-        product_sku,
-        engineering_costs,  -- From my time tracking system!
-        sales_costs,
-        marketing_costs
-    FROM cost_attribution.activity_based_allocation
-),
-customer_p_and_l AS (
-    SELECT
-        r.customer_id,
-        r.product_sku,
-        r.list_revenue,
-        r.discounts,
-        r.net_revenue,
-        dc.infrastructure_costs,
-        dc.support_costs,
-        ac.engineering_costs,  -- My system enabling this!
-        ac.sales_costs,
-        (r.net_revenue - dc.total_costs - ac.total_costs) as operating_margin
-    FROM revenue_base r
-    JOIN direct_costs dc ON r.product_sku = dc.product_sku
-    JOIN allocated_costs ac ON r.product_sku = ac.product_sku
-)
-```
+**I personally designed** the comprehensive P&L structure that became our financial North Star:
+
+The architecture started with revenue data from my Revenue Platform—the clean, reconciled data that tied back to SAP. From there, I built a complete P&L waterfall that flowed through multiple cost layers:
+
+- **Revenue Base:** Starting with the consolidated revenue from the platform I had built
+- **Direct Costs:** Infrastructure, support, and third-party costs that could be directly attributed
+- **Allocated Costs:** The breakthrough—using my time tracking system to accurately allocate engineering costs based on actual work, not estimates
+- **Customer P&L:** For the first time, true profitability at the customer and product level
+
+The P&L waterfall I architected flowed from gross revenue through discounts to net revenue, then systematically subtracted infrastructure costs, support costs, and intelligently allocated engineering and GTM costs to arrive at true operating margin.
+
+This wasn't just reporting—it was a complete reimagining of how we understood profitability. By connecting every dollar of cost to the revenue it enabled, we could finally see which products and customers were truly profitable. The engineering cost allocation, powered by my time tracking system, was the key that unlocked this visibility at scale.
 
 ### 3. The >100K SKU Challenge
 
@@ -150,34 +89,18 @@ Managing profitability at this granularity required innovation:
 
 For the first time, we could answer: "Is this customer profitable?"
 
-```python
-def calculate_customer_lifetime_value(customer_id):
-    """
-    Revolutionary: Full customer P&L including allocated costs
-    """
-    # Revenue (from revenue platform)
-    revenue = get_customer_revenue(customer_id)
+For the first time, we could answer: **"Is this customer profitable?"**
 
-    # Direct costs
-    direct_costs = get_direct_costs(customer_id)
+I developed a revolutionary approach to customer lifetime value that included fully allocated costs, not just revenue and direct costs. The system I designed pulled together multiple data streams:
 
-    # Allocated engineering (from time tracking)
-    engineering_allocation = allocate_engineering_costs(
-        customer_id,
-        time_tracking_data  # My original system!
-    )
+- **Revenue:** Clean, reconciled data from the Revenue Platform
+- **Direct Costs:** Infrastructure and support costs directly attributable to the customer
+- **Allocated Engineering:** The critical piece—using my time tracking system to allocate engineering investment based on which features and products the customer actually used
+- **GTM Costs:** Sales and marketing costs allocated based on customer acquisition and support patterns
 
-    # Sales & marketing allocation
-    gtm_allocation = allocate_gtm_costs(customer_id)
+This comprehensive view revealed surprising insights. Some of our "biggest" customers by revenue were actually unprofitable when you included the engineering resources they consumed through custom feature requests and high-touch support. Conversely, some mid-market customers with standard needs were incredibly profitable.
 
-    # Full P&L
-    return {
-        'gross_margin': revenue - direct_costs,
-        'contribution_margin': revenue - direct_costs - engineering_allocation,
-        'operating_margin': revenue - all_costs,
-        'ltv': project_future_value(customer_id)
-    }
-```
+The ability to calculate true customer P&L—from gross margin through contribution margin to operating margin—fundamentally changed our customer strategy. We shifted focus from pure revenue growth to profitable growth, and could finally make data-driven decisions about which customers to invest in versus which to restructure.
 
 ## The Outcome
 
@@ -229,22 +152,11 @@ As an **insatiably curious builder**, the greatest validation is seeing your ear
 
 Moved from monthly to near real-time profitability:
 
-```python
-class RealTimeProfitability:
-    def __init__(self):
-        self.streaming_pipeline = DataflowPipeline()
-        self.cache_layer = Redis()
+I moved our profitability reporting from monthly batch processes to near real-time streaming updates. This was a massive technical undertaking that required rearchitecting how we processed financial data.
 
-    def stream_profitability_updates(self):
-        """
-        Near real-time P&L updates as transactions flow
-        """
-        return self.streaming_pipeline.process(
-            revenue_stream=self.get_revenue_stream(),
-            cost_stream=self.get_cost_stream(),
-            time_tracking_stream=self.get_time_allocation_stream()
-        )
-```
+The streaming pipeline I designed could process revenue updates, cost streams, and even engineering allocation data in near real-time. As transactions flowed through our systems, the P&L updated continuously, giving executives immediate visibility into margin impacts of pricing decisions, cost changes, and resource allocation.
+
+This wasn't just faster reporting—it fundamentally changed how we operated. Sales could see the profitability impact of deals as they were being negotiated. Product teams could watch margin trends as new features rolled out. Finance could model scenarios and see results immediately rather than waiting for month-end. The move from monthly to near real-time profitability visibility enabled dynamic decision-making that simply wasn't possible before.
 
 ### Machine Learning for Allocation
 

@@ -1,0 +1,33 @@
+// Custom overrides that must be applied last
+// These ensure profile images are properly sized on about and bio pages
+
+// Override all other profile width settings with maximum specificity
+body .post article div.profile.profile-about {
+  width: 45% !important; // 50% bigger than original 30%
+  max-width: 400px !important;
+
+  @media (max-width: 576px) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  @media (min-width: 576px) {
+    width: 45% !important; // Force override the 30% from _components.scss
+    max-width: 400px !important;
+  }
+}
+
+body .post article div.profile.profile-bio {
+  width: 60% !important; // 2x bigger than original 30%
+  max-width: 500px !important;
+
+  @media (max-width: 576px) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  @media (min-width: 576px) {
+    width: 60% !important; // Force override the 30% from _components.scss
+    max-width: 500px !important;
+  }
+}

@@ -3,23 +3,22 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Tony
-middle_name:
+first_name: M. Tony
+middle_name: 
 last_name: Gibbons
 contact_note: >
-  Best reached via email or LinkedIn for professional inquiries.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Building intelligent systems from silicon to P&L. Engineering leader, strategic finance practitioner, and data science innovator.
+  Portfolio and insights from M. Tony Gibbons - Engineering Leader, Strategic Finance Practitioner, and Data Science Innovator.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: data-science, machine-learning, finance-analytics, engineering-leadership, portfolio # add your own keywords or leave empty
+keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🔥 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://gibbons-tony.github.io # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
+url: http://localhost:8080 # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -32,9 +31,16 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+
+# External service URLs for repository page
+# To use a different instance or service for displaying GitHub stats and trophies,
+# update these URLs. These are used in the repository templates.
+external_services:
+  github_readme_stats_url: https://github-readme-stats.vercel.app
+  github_profile_trophy_url: https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -55,8 +61,6 @@ bib_search: true
 
 # Dimensions
 max_width: 930px
-
-# TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -86,8 +90,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Tony Gibbons # blog_name will be displayed in your blog page
-blog_description: Insights on AI, data science, and building intelligent systems
+blog_name: Insights & Innovation # blog_name will be displayed in your blog page
+blog_description: Thoughts on AI, engineering leadership, and building at the intersection of disciplines
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -122,6 +126,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
+# Optional: Set default categories and tags for posts from each source.
 external_sources:
 
 # -----------------------------------------------------------------------------
@@ -148,7 +153,8 @@ collections:
     output: true
   casestudies:
     output: true
-    permalink: /casestudies/:name/
+  teachings:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -189,13 +195,16 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _casestudies/archived/
 keep_files:
   - CNAME
   - .nojekyll
 
 # Plug-ins
 plugins:
+  - jekyll-3rd-party-libraries
   - jekyll-archives-v2
+  - jekyll-cache-bust
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
@@ -207,6 +216,7 @@ plugins:
   - jekyll-regex-replace
   - jekyll/scholar
   - jekyll-sitemap
+  - jekyll-socials
   - jekyll-tabs
   - jekyll-terser
   - jekyll-toc
@@ -248,13 +258,17 @@ jekyll-archives:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
       year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
+      tag: "/blog/tag/:name/"
+      category: "/blog/category/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    permalinks:
+      year: "/books/:year/"
+      tag: "/books/tag/:name/"
+      category: "/books/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: [] # these tags will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -262,13 +276,13 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Gibbons]
-  first_name: [Tony, Anthony]
+  first_name: [Tony, M. Tony, M.]
 
   style: apa
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: case-studies.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
@@ -288,10 +302,10 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  inspirehep: false # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -307,10 +321,14 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    dimensions,
+    eprint,
     google_scholar_id,
+    hal,
     html,
     inspirehep_id,
     pdf,
+    pmid,
     poster,
     preview,
     selected,
@@ -345,7 +363,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
@@ -359,7 +377,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-quality 85"
+    webp: "-auto-orient -quality 85"
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.
@@ -379,6 +397,7 @@ enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
+enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
@@ -438,7 +457,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:
@@ -585,6 +604,14 @@ third_party_libraries:
     url:
       js: "https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-element-bundle.min.js.map"
     version: "11.0.5"
+  vanilla-cookieconsent:
+    integrity:
+      css: "sha256-ygRrixsQlBByBZiOcJamh7JByO9fP+/l5UPtKNJmRsE="
+      js: "sha256-vG4vLmOB/AJbJ6awr7Wg4fxonG+fxAp4cIrbIFTvRXU="
+    url:
+      css: "https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@{{version}}/dist/cookieconsent.css"
+      js: "https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@{{version}}/dist/cookieconsent.umd.js"
+    version: "3.1.0"
   vega:
     integrity:
       js: "sha256-Yot/cfgMMMpFwkp/5azR20Tfkt24PFqQ6IQS+80HIZs="
@@ -629,12 +656,13 @@ jekyll_get_json:
 jsonresume:
   - basics
   - work
-  - volunteer
   - education
+  - publications
+  - projects
+  - volunteer
   - awards
   - certificates
   - skills
   - languages
   - interests
   - references
-  - projects

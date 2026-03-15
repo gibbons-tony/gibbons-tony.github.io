@@ -1,15 +1,15 @@
 ---
-layout: casestudy
-title: "$30B+ Revenue Platform Built from Zero"
+layout: page
+title: "Google Cloud $XXB Revenue Platform: Zero to 8,000 Users"
 description: Creating unified revenue truth after year-long engineering failure, scaling to 8,000+ daily users
 summary: After a formal engineering team spent a full year building a failed solution, I personally coded the SQL pipeline prototype that unified revenue reporting, went from deep skepticism to 8,000+ ecstatic users, and enabled 32% Y/Y growth
-img: assets/img/casestudies/revenue/result.jpg
-importance: 3
+img: assets/img/casestudies/revenue_thumb.png
+importance: 2
 category: Professional
 metrics:
   - value: "0 → 8,000"
     label: "Daily Active Users"
-  - value: "$30B+"
+  - value: "$XXB"
     label: "Revenue Tracked"
   - value: "32% Y/Y"
     label: "Growth Enabled (Outpacing AWS)"
@@ -51,54 +51,56 @@ My hypothesis: The platform **must be reconcilable, granular, and easy to use**.
 - **Granular:** Drill down to individual transactions and customers
 - **Easy to use:** Self-service without SQL knowledge required
 
-### 3. Political Navigation: Building the Landing Pad While the Rocket Launches
+### 3. Complete Ownership: Governance, Political Navigation, and Delivery
 
 {% include figure.liquid path="assets/img/casestudies/revenue/action.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 <div class="caption">
-From failed engineering project to successful platform through fast iterations and continuous user engagement
+From failed engineering project to successful platform through complete ownership of technical, political, and governance challenges
 </div>
 
-This is where the real challenge lay—**some leaders who had been skeptical and had tried to kill our project**. I applied my **"Rocket & Landing Pad" principle**: If you're launching a rocket (the solution), you need a landing pad (prepared users) ready.
+This wasn't just a technical project—I owned the entire initiative end-to-end:
 
-**Building the Landing Pad Through Engagement:**
-- **Building coalition:** Started with friendly early adopters who desperately needed the solution
+**Governance & Leadership:**
+- **Managed Steering Committee members:** Regular presentations to C-level stakeholders
+- **Led Operating Committee:** Weekly alignment sessions with cross-functional leaders
+- **Drove solution alignment:** Unified conflicting viewpoints across Finance, Engineering, Sales, and Product teams
+- **Executive communication:** Kept Cloud CEO and leadership informed, maintaining critical air cover
+
+**Political Transformation:**
+Some leaders actively tried to kill our project early on due to territorialism and skepticism after the previous failure. The political navigation was as complex as the technical build:
+
+- **Converting hostile stakeholders:** Through 1:1 sessions, demos, and persistent engagement
+- **Building coalition:** Started with desperate early adopters, expanded systematically
+- **UAT as investment strategy:** Had SMEs validate the data for THEIR specific use cases
+- **Creating pull, not push:** Each iteration built more demand organically
 - **Fast iterations:** Weekly demos showing tangible progress and momentum
-- **UAT as investment strategy:** Had SMEs validate the data worked for THEIR specific use cases
-- **User empowerment:** Made users feel their voice was heard and shaped the product
-- **Managing skeptics:** Converted loudest critics into biggest champions through 1:1 sessions
-- **Creating pull:** Each iteration built more demand for the next release
-- **Executive air cover:** Kept Cloud leadership informed of progress to maintain support
 
-The **UAT program was genius for creating buy-in**: We had subject matter experts validate that the data worked for their specific use cases. By the time we launched, they'd already done the leg work to integrate it into their workflows. They weren't just users—they were investors who'd validated their own success criteria.
+The transformation was dramatic: **Leaders who tried to kill our project were later competing to be on our Governance Committee**. This wasn't luck—it was systematic relationship building and proving value incrementally.
 
-The key insight: **Keep users engaged throughout the entire process**, not just at requirements gathering and launch. By delivering fast iterations that showed momentum, we built anticipation and readiness. When the platform was ready, we had 8,000 users waiting on the landing pad—many having already validated it would solve their exact problems.
+**Technical Delivery & Handoff:**
+- **Personal prototype development:** I built the entire working prototype myself
+- **Proved the solution:** Demonstrated it could work at PETABYTE scale in real-time
+- **Systematic handoff:** Once proven, handed to engineering team for maintenance
+- **Continued governance:** Maintained product ownership while engineering handled operations
+
+The key insight: **You can't push a rope up a hill**. By owning every aspect—technical, political, and governance—and creating excellence that pulled people in, we transformed a failed project into the company's financial foundation.
 
 ## The Technical Implementation
 
-### Data Architecture
-```sql
--- Example of the complex join logic I personally wrote
-WITH revenue_base AS (
-  SELECT
-    billing.*,
-    sap.gl_account,
-    sap.cost_center,
-    sf.opportunity_id,
-    sf.account_executive
-  FROM transactional_billing billing
-  LEFT JOIN sap_general_ledger sap
-    ON billing.invoice_id = sap.reference_id
-    AND billing.period = sap.fiscal_period
-  LEFT JOIN salesforce_data sf
-    ON billing.customer_id = sf.account_id
-  WHERE
-    -- Complex business rules from tribal knowledge
-    billing.revenue_type IN ('subscription', 'usage', 'support')
-    AND sap.gl_account LIKE '4%' -- Revenue accounts
-)
-```
+### PETABYTE-Scale Data Architecture
 
-The magic wasn't just in the SQL—it was understanding the business logic that no one had documented.
+I personally architected and built a PETABYTE-scale real-time data engineering pipeline that bridged our mega high-throughput Spanner database (processing >1 million customers transacting against >100,000 products daily) with SAP, our system of record.
+
+The critical insight came from my previous SAP migration experience—I understood both the high-velocity engineering side and the strict double-entry accounting principles of SAP. This "connective tissue" knowledge was why I could solve what a formal engineering team couldn't after a full year of trying.
+
+**The Translation Layer I Built:**
+- Designed a clean, scalable method to map high-throughput Spanner transactions into SAP-compliant general ledger logic
+- Wrangled extensive tribal knowledge through dozens of SME conversations to uncover undocumented business rules
+- Built reconciliation checks at every step—if it didn't tie back to SAP, it didn't ship
+- Created complex transformation logic handling subscription, usage, and support revenue types
+- Solved edge cases like international currency conversions and legacy system quirks causing double-counting
+
+The magic wasn't just technical—it was understanding business logic that existed only in people's minds and making it systematic and scalable at PETABYTE scale.
 
 ## The Outcome
 
@@ -121,12 +123,14 @@ The most satisfying outcome demonstrated the power of creating pull versus pushi
 
 This wasn't luck—it was strategy. By building value incrementally and letting success create demand, we transformed the political landscape. As I learned: **"You can't push a rope up a hill."** Instead, we aligned the opportunity, showed the path, and let natural pull do the work. Once the train was in motion, even our former opponents wanted to board.
 
-### Long-Term Value
+### Long-Term Value & Strategic Impact
 
-- **Foundation for growth:** Became the bedrock for all revenue analytics and forecasting
+- **Foundation for P&L Framework:** This unified revenue data became the foundation for building the complete Cost & Profitability Framework
+- **PETABYTE scale achieved:** Processing billions of transactions in real-time
 - **M&A enablement:** Critical for acquisition integration and synergy tracking
 - **Org-wide standard:** Replaced dozens of shadow analytics efforts
 - **Still in use today:** The core architecture remains the backbone of revenue reporting
+- **Knowledge compounds:** The SAP expertise from my previous migration made this possible, and this platform enabled the next breakthrough
 
 ## Key Lessons
 

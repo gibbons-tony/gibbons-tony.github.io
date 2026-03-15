@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Technical demonstrations from UC Berkeley MIDS program showcasing RAG systems, computer vision, NLP, and cloud architectures.
+description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [UC Berkeley MIDS Projects]
+display_categories: [academic, work, fun]
 horizontal: false
 ---
 
