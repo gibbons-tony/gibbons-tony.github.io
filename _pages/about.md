@@ -26,30 +26,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Full-Spectrum Systems Architect** bridging foundational engineering with enterprise strategy. With a foundation spanning a BS in Computer Engineering, an MBA, and a Master's in Data Science, I navigate the entire technology stack—from ASIC hardware and hyperscale data centers to venture capital and AI application design. I build from zero-to-one, architecting complex systems that drive multi-billion-dollar ecosystems.
+I'm an engineer with a background in computer engineering, finance, and data science. I've spent two decades building systems — from chip design at Intel, to platforms and data architecture at Google, to a Master's in Data Science at UC Berkeley.
 
-**The Synthesis**
+**What I'm doing now**
 
-After two decades building decision-making systems—from silicon at Intel to massive platforms at Google—my focus is now on systems that drive radical human productivity. At **Ember Agentic Labs**, I develop Applied AI: specialized, autonomous agents that operate within governed boundaries to deliver tangible enterprise outcomes.
+At [Ember Agentic Labs](https://emberagenticlabs.com), I'm exploring what happens when you treat AI as a genuine creative partner rather than a tool. The first product is [Crucible](https://crucible.emberagenticlabs.com) — an open source development environment that coordinates specialized AI agents through a structured software lifecycle.
 
-**What I am Building**
+What excites me most is the potential for self-improving software — systems that get better the more you use them — and the way human-AI partnership can unlock creativity that neither side achieves alone. It's still early in the AI technology lifecycle, and the possibilities ahead are enormous.
 
-**Crucible** is this vision in production. It is an orchestration of specialized AI agents managing the complete software development lifecycle. Built solo in 25 days—1.1M lines of code, zero critical bugs—it proves that multi-agent systems can execute mission-critical workflows today.
-
-The true breakthrough is **scale without amnesia**. By utilizing advanced data science, structured data, and behavioral reinforcement, Crucible shatters traditional LLM context limits. It integrates the governance, persistent memory, and constraints required to make AI reliable at scale—transforming AI from a brilliant individual contributor into a cohesive organization with institutional memory.
-
-**The Future I See**
-
-We are past the theoretical phase of AI. The challenge now is bridging raw capability with real-world application. This requires a full-stack perspective: understanding how hardware limits software, how finance drives technology, and how humans adopt tools. My background as a hardware engineer, financial strategist, and AI architect uniquely positions me to build these bridges.
-
-Current focus areas:
-- **Agentic orchestration** beyond standard context limits
-- **Persistent, queryable memory** via knowledge graphs
-- **Enterprise-scale behavioral governance** for AI
-- **Domain-specific applications** (travel, automotive, collectibles)
-
-**What is Next**
-
-I am currently focused on pushing the boundaries of Applied AI at Ember Agentic Labs, tackling the hardest problems at the intersection of AI and enterprise architecture. While my primary dedication is to building these systems, I am always open to engaging in transformative collaborations and conversations with exceptional teams.
+More about our [mission and focus areas](https://emberagenticlabs.com), and [Crucible](https://crucible.emberagenticlabs.com) specifically.
 
 Dive into the technical depth in my [projects](/projects/), the business impact in my [case studies](/casestudies/), and the full journey in my [bio](/bio/).
