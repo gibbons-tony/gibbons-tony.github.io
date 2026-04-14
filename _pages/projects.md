@@ -19,20 +19,6 @@ horizontal: false
     padding-bottom: 8px;
     margin-bottom: 24px !important;
   }
-  .projects .card {
-    max-height: 280px;
-    overflow: hidden;
-  }
-  .projects .card img {
-    max-height: 140px;
-    object-fit: cover;
-  }
-  .projects .card-title {
-    font-size: 0.95rem !important;
-  }
-  .projects .card-text {
-    font-size: 0.8rem;
-  }
 </style>
 
 <!-- pages/projects.md -->
