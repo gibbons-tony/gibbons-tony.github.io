@@ -65,15 +65,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "post-i-built-1-1m-lines-of-fully-documented-and-tested-code-in-25-days-and-so-can-you",
+        },{id: "post-crucible-a-self-learning-tool-i-built-to-build-everything-else",
         
-          title: "I Built 1.1M Lines of Fully Documented and Tested Code in 25 Days...",
+          title: "Crucible: A Self-Learning Tool I Built to Build Everything Else",
         
-        description: "Learn how AI-powered development can help you build production-quality software at unprecedented speed. The story of Crucible—where multi-agent systems meet real-world software engineering.",
+        description: "I built an AI development tool with specialized agents and a knowledge graph that gets smarter as you use it. Then I used it to build everything else. Here&#39;s the story.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/built-1-1m-lines-ai-code-25-days/";
+            window.location.href = "/blog/2026/crucible-self-learning-tool/";
           
         },
       },{id: "post-creating-pull-vs-pushing-harder-a-leadership-philosophy",
