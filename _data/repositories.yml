@@ -1,7 +1,9 @@
 github_users:
   - gibbons-tony
+  - ember-agentic
 
 repo_description_lines_max: 2
 
 github_repos:
+  - ember-agentic/crucible
   - gibbons-tony/mids-academic-portfolio

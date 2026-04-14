@@ -2,12 +2,24 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected projects across open source, academic research, and professional work.
 nav: true
 nav_order: 3
-display_categories: [academic, work, fun]
+display_categories: [open-source, academic]
 horizontal: false
 ---
+
+<style>
+  .category {
+    color: #e0e0e0 !important;
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+    text-transform: capitalize;
+    border-bottom: 2px solid rgba(255,255,255,0.15);
+    padding-bottom: 8px;
+    margin-bottom: 24px !important;
+  }
+</style>
 
 <!-- pages/projects.md -->
 <div class="projects">
