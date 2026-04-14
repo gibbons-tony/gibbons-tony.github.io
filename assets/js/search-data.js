@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Selected projects across open source, academic research, and professional work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -304,6 +304,11 @@ ninja.data = [{
           description: "Building comprehensive AI/ML platform that documented the entire chain from business requirements to code, enabling natural language access to both analytics and deep system understanding",
           section: "Casestudies",handler: () => {
               window.location.href = "/casestudies/06_ai_analytics_assistant_enhanced/";
+            },},{id: "projects-crucible",
+          title: 'Crucible',
+          description: "Open source AI development environment — specialized persona agents coordinating through a structured software lifecycle",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/01_crucible/";
             },},{id: "projects-geographic-analysis-of-u-s-homelessness-patterns-2007-2022",
           title: 'Geographic Analysis of U.S. Homelessness Patterns (2007-2022)',
           description: "Data-driven insights into homelessness trends, natural disaster impacts, and policy recommendations",
@@ -334,96 +339,6 @@ ninja.data = [{
           description: "Algorithmic trading system achieving 23.7% returns with 1.19 Sharpe ratio",
           section: "Projects",handler: () => {
               window.location.href = "/projects/16_algorithmic_trading/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/9_project/";
-            },},{id: "projects-cloud-native-application-platform",
-          title: 'Cloud-Native Application Platform',
-          description: "Full-stack cloud application with microservices architecture, containerization, and CI/CD automation",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/cloud_app_demo/";
-            },},{id: "projects-cloud-native-application-platform",
-          title: 'Cloud-Native Application Platform',
-          description: "Full-stack cloud application with microservices architecture, containerization, and CI/CD automation",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/cloud_app_enhanced/";
-            },},{id: "projects-computer-vision-pipeline",
-          title: 'Computer Vision Pipeline',
-          description: "End-to-end computer vision system with object detection, image classification, and real-time processing capabilities",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/computer_vision_demo/";
-            },},{id: "projects-medical-image-analysis-for-chest-disease-detection",
-          title: 'Medical Image Analysis for Chest Disease Detection',
-          description: "AI-powered chest X-ray analysis system for detecting 14 pulmonary conditions using hybrid traditional CV and deep learning",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/computer_vision_enhanced/";
-            },},{id: "projects-geographic-analysis-of-u-s-homelessness-patterns-2007-2022",
-          title: 'Geographic Analysis of U.S. Homelessness Patterns (2007-2022)',
-          description: "Data-driven insights into homelessness trends, natural disaster impacts, and policy recommendations",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/homelessness_analysis/";
-            },},{id: "projects-nlp-text-analysis-system",
-          title: 'NLP Text Analysis System',
-          description: "Advanced natural language processing system for sentiment analysis, entity recognition, and text classification",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/nlp_demo/";
-            },},{id: "projects-financial-sentiment-analysis-with-self-training-and-debiasing",
-          title: 'Financial Sentiment Analysis with Self-Training and Debiasing',
-          description: "Advanced NLP system using self-training and debiasing techniques to achieve 81.4% accuracy on financial text sentiment analysis",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/nlp_enhanced/";
-            },},{id: "projects-rag-system-for-enterprise-knowledge",
-          title: 'RAG System for Enterprise Knowledge',
-          description: "Production-ready Retrieval-Augmented Generation system with vector embeddings, semantic search, and LLM integration",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/rag_demo/";
-            },},{id: "projects-enterprise-genai-knowledge-platform-300-users",
-          title: 'Enterprise GenAI Knowledge Platform (300+ Users)',
-          description: "Production RAG system serving 300 engineers and 40 marketers with 89% retrieval accuracy using hyperparameter-optimized LangChain architecture",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/template_archive/wip_versions/rag_demo_enhanced/";
             },},{
         id: 'social-email',
         title: 'email',
