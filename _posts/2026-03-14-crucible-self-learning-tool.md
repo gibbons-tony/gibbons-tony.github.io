@@ -55,26 +55,23 @@ That realization is what led to [Ember Agentic Labs](https://emberagenticlabs.co
 
 ---
 
-## Where it is today
+## What it means
 
-**Crucible Alpha** is open source and available now. It's a v1 built fast — functional and genuinely useful, but rough in places. It's a best-effort system: the agents do a good job following the workflow, but you need to actively guide them. Remind them to create tasks. Ask them to search the knowledge base. Treat each agent like a capable but new team member who needs direction.
+Crucible runs in VS Code with Claude Code. You work with agents through a chat interface, create and resolve tasks, and watch the knowledge base grow as you build. The agents do a good job following the workflow, but they need active guidance — treat each one like a capable new team member who needs direction.
 
-It runs in VS Code with Claude Code. You work with the agents through a chat interface, create and resolve tasks, and watch the knowledge base grow as you build. It's the tip of the iceberg of what's possible.
-
-**Crucible Pro** is in active development — multi-LLM support (use any provider), adaptive model selection for speed/cost/quality, enforced quality gates, agent swarming with auto-scaling pools, and self-improving system capabilities. Alpha is the foundation. Pro is where it's going.
+There's a lot more planned — multi-LLM support, adaptive model selection, agent swarming, self-improving system capabilities. What exists today is the foundation for something much bigger.
 
 ---
 
-## Come build with us
+## Learn more
 
-Crucible is open source under the MIT license. I'm genuinely excited about where this is heading and I'd love for others to explore it, break it, improve it, and take it in directions I haven't thought of.
+I'm genuinely excited about where this is heading and I'd love for others to explore it.
 
-- **GitHub:** [github.com/ember-agentic/crucible](https://github.com/ember-agentic/crucible)
-- **Download:** [Crucible Alpha for macOS](https://github.com/ember-agentic/crucible/releases/tag/v0.1.0)
 - **Website:** [crucible.emberagenticlabs.com](https://crucible.emberagenticlabs.com)
+- **Ember Agentic Labs:** [emberagenticlabs.com](https://emberagenticlabs.com)
 - **Contact:** [tony@emberagenticlabs.com](mailto:tony@emberagenticlabs.com)
 
-This is early. There's a lot to build. If any of this resonates with you, come join the fun.
+If any of this resonates with you, reach out.
 
 ---
 
