@@ -45,8 +45,8 @@ body .post article div.profile.profile-about {
 }
 
 body .post article div.profile.profile-bio {
-  width: 60% !important; // 2x bigger than original 30%
-  max-width: 500px !important;
+  width: 30% !important;
+  max-width: 250px !important;
 
   @media (max-width: 576px) {
     width: 100% !important;

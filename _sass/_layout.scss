@@ -60,8 +60,8 @@ div.profile.profile-about {
 }
 
 div.profile.profile-bio {
-  width: 60% !important; // 2x bigger than original 30%
-  max-width: 500px !important;
+  width: 30% !important;
+  max-width: 250px !important;
 
   @media (max-width: 576px) {
     width: 100% !important;
@@ -71,8 +71,8 @@ div.profile.profile-bio {
   }
 
   @media (min-width: 576px) {
-    width: 60% !important; // Override the 30% from _components.scss
-    max-width: 500px !important;
+    width: 30% !important;
+    max-width: 250px !important;
   }
 }
 

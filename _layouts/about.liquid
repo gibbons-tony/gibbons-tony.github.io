@@ -26,8 +26,8 @@ layout: default
       rounded' %}
           {% endif %}
           {% if page.permalink == '/bio/' %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.6}}px, (min-width: 576px)
-      60vw, 95vw"{% endcapture %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.30}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
           {% else %}
             {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.30}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
