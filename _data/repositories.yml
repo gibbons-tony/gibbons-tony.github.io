@@ -5,5 +5,5 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - ember-agentic/crucible
+  - ember-agentic/crucible-releases
   - gibbons-tony/mids-academic-portfolio
