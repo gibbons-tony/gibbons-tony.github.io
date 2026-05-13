@@ -9,40 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-case-studies",
-          title: "case studies",
-          description: "Real-world impact through technical innovation and strategic thinking",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/case-studies/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
+  },{id: "nav-technical-projects",
+          title: "technical projects",
           description: "Selected projects across open source, academic research, and professional work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Open source projects and demonstrations showcasing AI/ML implementations, cloud architectures, and data science applications.",
+        },{id: "nav-business-cases",
+          title: "business cases",
+          description: "Real-world impact through technical innovation and strategic thinking",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/repositories/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "Engineering leader, strategic finance practitioner, and data science innovator with expertise spanning silicon to P&amp;L.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/case-studies/";
           },
         },{id: "nav-consulting",
           title: "consulting",
@@ -51,19 +30,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/consulting/";
           },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "Engineering leader, strategic finance practitioner, and data science innovator with expertise spanning silicon to P&amp;L.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Open source projects and demonstrations showcasing AI/ML implementations, cloud architectures, and data science applications.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "nav-bio",
           title: "bio",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/bio/";
-          },
-        },{id: "nav-bookshelf",
-          title: "bookshelf",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/books/";
           },
         },{id: "post-crucible-a-self-learning-tool-i-built-to-build-everything-else",
         
