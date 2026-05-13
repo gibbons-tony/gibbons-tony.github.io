@@ -4,7 +4,7 @@ permalink: /bio/
 title: bio
 subtitle: Engineering Leader | Strategic Finance Practitioner | Data Science Innovator
 nav: true
-nav_order: 6
+nav_order: 7
 
 profile:
   align: right

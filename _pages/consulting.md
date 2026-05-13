@@ -4,7 +4,7 @@ permalink: /consulting/
 title: consulting
 description: Strategic consulting and advisory services in data science and technology.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 ## Current Engagement
