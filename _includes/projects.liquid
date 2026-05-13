@@ -12,6 +12,9 @@
         %}
       {% endif %}
       <div class="card-body">
+        {% if project.category %}
+          <span class="project-tag project-tag-{{ project.category }}">{{ project.category }}</span>
+        {% endif %}
         <h2 class="card-title">{{ project.title }}</h2>
         <p class="card-text">{{ project.description }}</p>
         <div class="row ml-1 mr-1 p-0">

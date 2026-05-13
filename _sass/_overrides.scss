@@ -22,6 +22,28 @@ body .post article div.profile.profile-about {
   font-size: 1.2rem;
 }
 
+// Project category tags
+.project-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  color: #fff;
+  background: #6c757d;
+}
+
+.project-tag-academic {
+  background: #2563eb;
+}
+
+.project-tag-software {
+  background: #059669;
+}
+
 body .post article div.profile.profile-bio {
   width: 60% !important; // 2x bigger than original 30%
   max-width: 500px !important;
