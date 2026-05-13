@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /case-studies/
-title: case studies
+title: business cases
 description: Real-world impact through technical innovation and strategic thinking
 nav: true
 nav_order: 2

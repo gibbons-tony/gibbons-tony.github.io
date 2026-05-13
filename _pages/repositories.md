@@ -4,7 +4,7 @@ permalink: /repositories/
 title: repositories
 description: Open source projects and demonstrations showcasing AI/ML implementations, cloud architectures, and data science applications.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 {% if site.data.repositories.github_repos %}

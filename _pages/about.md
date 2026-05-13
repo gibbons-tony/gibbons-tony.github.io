@@ -36,4 +36,4 @@ What excites me most is the potential for self-improving software — systems th
 
 More about our [mission and focus areas](https://emberagenticlabs.com), and [Crucible](https://crucible.emberagenticlabs.com) specifically.
 
-Dive into the technical depth in my [projects](/projects/), the business impact in my [case studies](/casestudies/), and the full journey in my [bio](/bio/).
+Dive into the technical depth in my [technical projects](/projects/), the business impact in my [business cases](/case-studies/), and the full journey in my [bio](/bio/).

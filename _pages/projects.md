@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: technical projects
 permalink: /projects/
 description: Selected projects across open source, academic research, and professional work.
 nav: true
-nav_order: 3
+nav_order: 1
 display_categories: [open-source, academic]
 horizontal: false
 ---
