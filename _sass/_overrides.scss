@@ -17,6 +17,11 @@ body .post article div.profile.profile-about {
   }
 }
 
+// Smaller card titles on project/case-study cards
+.projects .card-title {
+  font-size: 1.2rem;
+}
+
 body .post article div.profile.profile-bio {
   width: 60% !important; // 2x bigger than original 30%
   max-width: 500px !important;
