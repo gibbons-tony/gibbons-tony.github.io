@@ -29,8 +29,8 @@ layout: default
             {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.6}}px, (min-width: 576px)
       60vw, 95vw"{% endcapture %}
           {% else %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.45}}px, (min-width: 576px)
-      45vw, 95vw"{% endcapture %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.30}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
           {% endif %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image

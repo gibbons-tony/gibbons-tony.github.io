@@ -3,7 +3,7 @@ layout: post
 title: "Crucible: A Self-Learning Tool I Built to Build Everything Else"
 date: 2026-03-14
 description: I built an AI development tool with specialized agents and a knowledge graph that gets smarter as you use it. Then I used it to build everything else. Here's the story.
-tags: [AI, Multi-Agent Systems, Software Engineering, LLM, Open Source]
+tags: [AI, Multi-Agent Systems, Software Engineering, LLM]
 categories: [Technical Leadership, Innovation]
 featured: true
 giscus_comments: true
@@ -59,19 +59,17 @@ That realization is what led to [Ember Agentic Labs](https://emberagenticlabs.co
 
 Crucible runs in VS Code with Claude Code. You work with agents through a chat interface, create and resolve tasks, and watch the knowledge base grow as you build. The agents do a good job following the workflow, but they need active guidance — treat each one like a capable new team member who needs direction.
 
-There's a lot more planned — multi-LLM support, adaptive model selection, agent swarming, self-improving system capabilities. What exists today is the foundation for something much bigger.
+The directions I'm exploring from here are where it gets really interesting — multi-LLM support so you can use any provider and optimize model selection for speed, cost, and quality per task. Agent swarming with auto-scaling pools for parallel throughput. And ultimately, self-improving system capabilities where the system reviews its own execution and proposes improvements. What exists today is the foundation for something much bigger.
 
 ---
 
-## Learn more
+## Try it
 
-I'm genuinely excited about where this is heading and I'd love for others to explore it.
+Crucible is in active development. Early access is available by request — visit [crucible.emberagenticlabs.com](https://crucible.emberagenticlabs.com) to learn more and request access.
 
 - **Website:** [crucible.emberagenticlabs.com](https://crucible.emberagenticlabs.com)
 - **Ember Agentic Labs:** [emberagenticlabs.com](https://emberagenticlabs.com)
 - **Contact:** [tony@emberagenticlabs.com](mailto:tony@emberagenticlabs.com)
-
-If any of this resonates with you, reach out.
 
 ---
 

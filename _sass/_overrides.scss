@@ -3,8 +3,8 @@
 
 // Override all other profile width settings with maximum specificity
 body .post article div.profile.profile-about {
-  width: 45% !important; // 50% bigger than original 30%
-  max-width: 400px !important;
+  width: 30% !important;
+  max-width: 250px !important;
 
   @media (max-width: 576px) {
     width: 100% !important;
@@ -12,8 +12,8 @@ body .post article div.profile.profile-about {
   }
 
   @media (min-width: 576px) {
-    width: 45% !important; // Force override the 30% from _components.scss
-    max-width: 400px !important;
+    width: 30% !important;
+    max-width: 250px !important;
   }
 }
 
