@@ -299,7 +299,7 @@ ninja.data = [{
               window.location.href = "/casestudies/06_ai_analytics_assistant_enhanced/";
             },},{id: "projects-crucible",
           title: 'Crucible',
-          description: "Open source AI development environment — specialized persona agents coordinating through a structured software lifecycle",
+          description: "AI development environment — specialized persona agents coordinating through a structured software lifecycle",
           section: "Projects",handler: () => {
               window.location.href = "/projects/01_crucible/";
             },},{id: "projects-geographic-analysis-of-u-s-homelessness-patterns-2007-2022",
