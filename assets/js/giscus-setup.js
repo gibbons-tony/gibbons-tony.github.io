@@ -19,9 +19,9 @@ function determineGiscusTheme() {
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
     "data-repo": "gibbons-tony/gibbons-tony.github.io",
-    "data-repo-id": "",
-    "data-category": "Comments",
-    "data-category-id": "",
+    "data-repo-id": "R_kgDORlkKdw",
+    "data-category": "Announcements",
+    "data-category-id": "DIC_kwDORlkKd84C-2_v",
     "data-mapping": "title",
     "data-strict": "1",
     "data-reactions-enabled": "1",
