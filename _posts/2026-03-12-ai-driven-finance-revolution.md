@@ -137,4 +137,4 @@ The question isn't whether AI will transform finance. It's whether you'll lead t
 
 ---
 
-*Want to discuss how to build AI-driven finance capabilities in your organization? [Connect with me on LinkedIn](https://linkedin.com/in/your-profile) or explore my [case studies](/casestudies/) to see how I've built these systems at scale.*
+*Want to discuss how to build AI-driven finance capabilities in your organization? [Connect with me on LinkedIn](https://linkedin.com/in/gibbons-tony) or explore my [case studies](/casestudies/) to see how I've built these systems at scale.*

@@ -54,7 +54,7 @@ Pure finance professionals make decisions that:
 - Miss technical inflection points that reshape entire industries
 - Treat engineering as a cost center rather than value creator
 
-I've watched finance teams kill projects that would have generated 100x returns because they couldn't understand the technical moat being built.
+I've watched finance teams kill projects that would have generated outsized returns because they couldn't understand the technical moat being built.
 
 ### The AI Ceiling
 
@@ -154,7 +154,7 @@ This convergence led to Crucible—13 AI agents working in parallel (silicon ins
 - **Engineering insight:** SDLC pipeline ensures quality
 - **Business insight:** Governance creates value, not overhead
 
-**Result:** 1.7M lines of code in 31 days with one operator.
+**Result:** ~780,000 lines of working, tested software in three months, built by one operator directing AI agents.
 
 ---
 
@@ -312,9 +312,9 @@ The future belongs to builders who can:
 
 The value isn't additive—it's multiplicative:
 
-- **Engineering alone:** Build things (1x)
-- **Engineering + Finance:** Build valuable things (10x)
-- **Engineering + Finance + AI:** Build intelligent systems that create compound value (100x)
+- **Engineering alone:** Build things that work
+- **Engineering + Finance:** Build things worth building
+- **Engineering + Finance + AI:** Build intelligent systems that create compounding value
 
 This isn't about being a generalist. It's about being a specialist who understands context. A deep expert who can see the bigger picture. A builder who knows why, not just how.
 
@@ -328,7 +328,7 @@ The [$30B+ Revenue Platform](/casestudies/03_revenue_platform/) succeeded becaus
 
 The [AI Analytics Assistant](/casestudies/06_ai_analytics_assistant/) worked because I knew SQL (engineering), P&L structure (finance), and RAG architectures (AI).
 
-[Crucible](2026-03-12-built-1-7m-lines-ai-code-31-days.md) exists because I see software development as a business process that can be governed like a financial system and automated like a chip pipeline.
+[Crucible](/blog/2026/adventures-in-orchestrating-ai/) exists because I see software development as a business process that can be governed like a financial system and automated like a chip pipeline.
 
 **The biggest breakthroughs in your career won't come from going deeper in one domain. They'll come from building bridges between domains that others see as separate.**
 
