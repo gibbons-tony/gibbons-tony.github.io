@@ -58,15 +58,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/bio/";
           },
-        },{id: "post-crucible-a-self-learning-tool-i-built-to-build-everything-else",
+        },{id: "post-adventures-in-orchestrating-ai-to-build-software-at-scale",
         
-          title: "Crucible: A Self-Learning Tool I Built to Build Everything Else",
+          title: "Adventures in orchestrating AI to build software at scale",
         
-        description: "I built an AI development tool with specialized agents and a knowledge graph that gets smarter as you use it. Then I used it to build everything else. Here&#39;s the story.",
+        description: "One operator, three months, and the coherence wall that separates AI which ships at scale from AI that stalls.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/crucible-self-learning-tool/";
+            window.location.href = "/blog/2026/adventures-in-orchestrating-ai/";
           
         },
       },{id: "post-creating-pull-vs-pushing-harder-a-leadership-philosophy",
