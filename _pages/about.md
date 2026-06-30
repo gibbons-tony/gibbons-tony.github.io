@@ -30,7 +30,7 @@ I'm an engineer with a background in computer engineering, finance, and data sci
 
 **What I'm doing now**
 
-At [Ember Agentic Labs](https://emberagenticlabs.com), I'm exploring what happens when you treat AI as a genuine creative partner rather than a tool. The first product is [Crucible](https://crucible.emberagenticlabs.com) — an open source development environment that coordinates specialized AI agents through a structured software lifecycle.
+At [Ember Agentic Labs](https://emberagenticlabs.com), I'm exploring what happens when you treat AI as a genuine creative partner rather than a tool. The first product is [Crucible](https://crucible.emberagenticlabs.com) — a free development environment that coordinates specialized AI agents through a structured software lifecycle.
 
 What excites me most is the potential for self-improving software — systems that get better the more you use them — and the way human-AI partnership can unlock creativity that neither side achieves alone. It's still early in the AI technology lifecycle, and the possibilities ahead are enormous.
 
