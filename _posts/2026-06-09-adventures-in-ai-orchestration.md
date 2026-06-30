@@ -2,6 +2,8 @@
 layout: post
 title: "Adventures in orchestrating AI to build software at scale"
 date: 2026-06-09
+redirect_from:
+  - /blog/2026/adventures-in-orchestrating-ai/
 description: One operator, three months, and the coherence wall that separates AI which ships at scale from AI that stalls.
 tags: [AI, Software Engineering, Multi-Agent Systems, AI Adoption]
 categories: [Technical Leadership, Innovation]
