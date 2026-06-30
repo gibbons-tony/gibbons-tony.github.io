@@ -66,7 +66,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/adventures-in-orchestrating-ai/";
+            window.location.href = "/blog/2026/adventures-in-ai-orchestration/";
           
         },
       },{id: "post-creating-pull-vs-pushing-harder-a-leadership-philosophy",
