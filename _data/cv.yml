@@ -44,11 +44,18 @@
       institution: Ember Agentic Labs
       year: Nov 2025 - Present
       description:
-        - Founded AI startup focused on multi-agent orchestration and self-improving software systems
-        - Developing Crucible platform that enables coherent AI development at scale through innovative knowledge graph architecture
-        - Built 1.1M+ lines of fully documented and tested code in 25 days using proprietary multi-agent framework
-        - Currently incubating breakthrough technologies in autonomous software development and AI governance
-        - Creating enterprise solutions for organizations seeking to leverage self-improving AI systems
+        - "Built and shipped Crucible, a governed AI software-development platform \u2014 specialized agents run the full lifecycle against one shared knowledge graph; deterministic gates refuse work missing its acceptance criteria rather than flagging it in review"
+        - Delivered solo in three months, using the platform to build itself
+        - "Public alpha since May 2026 \u2014 signed and notarized installers for macOS, Windows and Linux, built in CI; runs locally on user-supplied model keys"
+        - "Adopted by a deep-tech operating company after a controlled head-to-head against their incumbent tool; output judged comparable to a top-tier consultancy's"
+        - "Cross-model evaluation layer \u2014 every quality gate graded by a different provider than the one that produced the work, spanning Anthropic, OpenAI, Gemini, DeepSeek, Qwen and local models via Ollama"
+        - "Stack: TypeScript, Node.js, VS Code Extension API, Model Context Protocol (MCP), LangGraph state machines with checkpointing, SQLite knowledge graph with hybrid full-text and vector retrieval, per-agent git worktree isolation, GitHub Actions CI"
+
+    - title: Technical Advisor
+      institution: TAP Sciences (tapsciences.com)
+      year: Jan 2026 - Present
+      description:
+        - "Advise across AI and high-performance computing, semiconductors, and data-center infrastructure at a deep-tech operating company that originates, evaluates, holds and advances programs from invention to commercial scale"
 
     - title: Data Analytics and Engineering Manager
       institution: Google, Cloud Finance Transformation
@@ -137,9 +144,17 @@
         - Petabyte-scale pipelines, data modeling, data governance
         - Data warehousing, CI/CD, data security
         - Project Management and SLA definition
+    - title: AI Engineering & Agent Systems
+      items:
+        - Multi-agent orchestration, LLM application architecture, agentic workflows
+        - Model Context Protocol (MCP), LangGraph state machines, tool-calling and function-calling
+        - RAG, vector search and hybrid retrieval, knowledge graphs
+        - Model evaluation and quality gating, cross-model judging, LLM observability
+        - Anthropic, OpenAI, Gemini, DeepSeek, Qwen, Ollama
     - title: Programming Skills
       items:
-        - Exceptional coding in SQL, Python, and Java
+        - SQL, Python, Java, TypeScript, Node.js
+        - Git, VS Code Extension API, SQLite
         - Data preparation and analysis
     - title: Product & Collaboration
       items:
